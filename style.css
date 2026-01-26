@@ -1,0 +1,32 @@
+
+body 
+{
+    background-color: rgb(236, 231, 243);
+}
+
+/* NAVIGATION LIST STUFF */
+nav ul 
+{
+    list-style-type: none; /*this removes the bullet points*/
+    margin: 0px; /*removes the browser’s default OUTER spacing around the <ul> */
+    padding: 0px; /*removes the browser’s default INNER spacing around the <ul> */
+    overflow: auto; /* need overflow because of float, float so its not inline meaning without overflow it will collaspse*/
+    background-color: #333333; /* sets the background color of the list */
+}
+nav ul li 
+{
+    float: left; /* makes items line up starting from left */
+}
+nav ul li a /* change the style of a link in the nav list */
+{
+    display: block; /* turns into button, u can click padding, not just text*/
+    color: white; /* the colour of the text  */
+    padding: 10px 14px; /* a box around the text, first is top/bot, second is l/r  */
+    text-align: center; /* centers the text in the padding box */
+    text-decoration: none;
+}
+nav ul li a:hover /* this changes the format of a link in a list when the cursor hovers it */
+{
+    background-color: #29073c; /*sets the background of the colour (area is the padding)*/
+}
+
