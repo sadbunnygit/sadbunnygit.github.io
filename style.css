@@ -1,10 +1,31 @@
 
+:root /*these are variables, need var keeyowrd touse*/
+{
+    --outerList-width: 300px;
+}
+
 body 
 {
+    margin: 0;
+    padding-top: 30px; /*so nav bar doesnt cover :)*/
     background-color: rgb(236, 231, 243);
 }
 
+html 
+{
+    scroll-padding-top: 45px; /* so when auto scrolling nav doesnt cover header */
+}
+
 /* NAVIGATION LIST STUFF */
+nav 
+{
+    position: fixed; /* Keeps it on the screen */
+    top: 0;          /* Stick to the top */
+    left: 0;         /* Start at the left edge */
+    width: 100%;     /* Full width */
+    background-color: #333333; 
+    z-index: 1000;   /* Make sure it stays above other content */
+}
 nav ul 
 {
     list-style-type: none; /*this removes the bullet points*/
@@ -30,3 +51,44 @@ nav ul li a:hover /* this changes the format of a link in a list when the cursor
     background-color: #29073c; /*sets the background of the colour (area is the padding)*/
 }
 
+.outerList 
+{
+    border-color: #8d61a8; 
+    border-style: dotted;
+    border-width: 4px;
+    list-style-type: none; /*this removes the bullet points*/
+    margin: 0px; /*removes the browser’s default OUTER spacing around the <ul> */
+    padding: 0px; /*removes the browser’s default INNER spacing around the <ul> */
+    overflow: auto;
+    color: rgb(39, 0, 230);
+}
+.outerList li
+{
+    border-style: solid;
+    border-color: #8d61a8; 
+    border-width: 2px;
+    float: left;
+    padding: 10px 14px; /* a box around the text, first is top/bot, second is l/r  */
+    text-align: center; /* centers the text in the padding box */
+    width: var(--outerList-width);
+}
+.innerList
+{
+    color: rgb(0, 130, 230);
+    border-style: inset;
+    border-color: #97fcff; 
+    border-width: 2px;
+}
+.innerList li
+{
+    border-style: groove;
+    border-color: #aeaeae; 
+    float: none;
+    padding: 10px 14px; 
+    text-align: left; 
+    width: calc(var(--outerList-width) / 1.5);
+}
+.innerList details
+{
+    word-wrap: normal;
+}
