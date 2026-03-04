@@ -1,7 +1,7 @@
 
 :root /*these are variables, need var keeyowrd touse*/
 {
-    --outerList-width: 300px;
+    --horiBoxesList-box-width: 300px;
 }
 
 body 
@@ -50,34 +50,42 @@ nav ul li a:hover /* this changes the format of a link in a list when the cursor
 {
     background-color: #29073c; /*sets the background of the colour (area is the padding)*/
 }
+/*END OF NAV LIST*/
 
-.outerList 
+/*horiBoxesList: floating boxes aligned horizantally*/
+.horiBoxesList 
 {
     border-color: #8d61a8; 
     border-style: dotted;
     border-width: 4px;
     list-style-type: none; /*this removes the bullet points*/
-    margin: 0px; /*removes the browser’s default OUTER spacing around the <ul> */
-    padding: 0px; /*removes the browser’s default INNER spacing around the <ul> */
+    margin: 10px; /*removes the browser’s default OUTER spacing around the <ul> */
+    padding: 10px; /*removes the browser’s default INNER spacing around the <ul> */
     overflow: auto;
     color: rgb(39, 0, 230);
 }
-.outerList li
+.horiBoxesList li 
 {
-    border-style: solid;
+    border-style: dashed;
     border-color: #8d61a8; 
     border-width: 2px;
     float: left;
     padding: 10px 14px; /* a box around the text, first is top/bot, second is l/r  */
     text-align: center; /* centers the text in the padding box */
-    width: var(--outerList-width);
+    width: var(--horiBoxesList-box-width);
+    margin: 10px; /* space on the outside of the box */
 }
+
+
 .innerList
 {
     color: rgb(0, 130, 230);
     border-style: inset;
     border-color: #97fcff; 
     border-width: 2px;
+    padding: 0;
+    list-style-type: none; /*this removes the bullet points*/
+
 }
 .innerList li
 {
@@ -86,9 +94,18 @@ nav ul li a:hover /* this changes the format of a link in a list when the cursor
     float: none;
     padding: 10px 14px; 
     text-align: left; 
-    width: calc(var(--outerList-width) / 1.5);
+    width: calc(var(--horiBoxesList-box-width) / 1.5);
 }
 .innerList details
 {
     word-wrap: normal;
+}
+
+details:not([open])
+{
+    cursor: help;
+}
+details summary:hover
+{
+    color: #8d61a8; /* mayve move this back into the closed portion*/
 }
