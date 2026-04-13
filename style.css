@@ -11,7 +11,8 @@
     position: fixed;
     top: 50%;
     left: 50%;
-    color: rgba(255, 0, 0, 0.15);
+    transform: translate(-50%, -50%) rotate(15deg);
+    color: rgba(255, 0, 0, 0.716);
     z-index: 9999;
     font-size: 5rem; /* 5 times the root font size */
     font-weight: 900; /* boldness basically*/
