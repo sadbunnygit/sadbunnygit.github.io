@@ -1,0 +1,43 @@
+
+[
+    {
+        "category": "Programming Languages",
+        "skills":
+        [
+            {
+                "name": "C++",
+                "level": "Experienced",
+                "description": "OOP",
+                "uses": 
+                [
+                    "Academic coursework"
+                ]
+            },
+            {
+                "name": "HTML & CSS",
+                "level": "Experienced",
+                "description": "Web development for this portfolio site.",
+                "uses": 
+                [
+                    "This portfolio website",
+                    "Frontend for WEA project"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Software Tools",
+        "skills":
+        [
+            {
+                "name": "Git & GitHub",
+                "level": "Experienced",
+                "description": "Version control for all solo and team projects.",
+                "uses": 
+                [
+                    "All programming projects, especially collaborative ones"
+                ]
+            }
+        ]
+    }
+]
