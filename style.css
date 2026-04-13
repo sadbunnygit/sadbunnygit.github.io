@@ -109,3 +109,44 @@ details summary:hover
 {
     color: #8d61a8; /* mayve move this back into the closed portion*/
 }
+
+
+/* general (not specefic to this app, like i should copy paste these to otehr css) */
+
+.hidden 
+{
+    display: none;
+}
+
+.tooltipWrapper 
+{
+    position: relative;
+    display: inline-block;
+}
+.tooltip 
+{
+    position: absolute;
+    top: -5px;
+    left: 105%;
+    width: 220px;
+
+    background: #19012b;
+    color: rgb(235, 217, 255);
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 12px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease;
+}
+.tooltipWrapper:hover .tooltip 
+{
+    opacity: 1;
+    visibility: visible;
+}
+.tooltipWrapper input:focus + .tooltip 
+{
+    opacity: 1;
+    visibility: visible;
+}
