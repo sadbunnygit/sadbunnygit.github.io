@@ -4,6 +4,17 @@
     --horiBoxesList-box-width: 300px;
 }
 
+
+/* Work in Progress Banner */
+.wipBanner 
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    color: rgba(255, 0, 0, 0.15);
+    z-index: 9999;
+}
+
 body 
 {
     margin: 0;
@@ -109,6 +120,8 @@ details summary:hover
 {
     color: #8d61a8; /* mayve move this back into the closed portion*/
 }
+
+
 
 
 /* general (not specefic to this app, like i should copy paste these to otehr css) */
