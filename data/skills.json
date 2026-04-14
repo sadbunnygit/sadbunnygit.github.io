@@ -6,7 +6,7 @@
         [
             {
                 "name": "C++",
-                "level": "experienced",
+                "level": "comfortable",
                 "description": "OOP",
                 "uses": 
                 [
@@ -15,7 +15,7 @@
             },
             {
                 "name": "HTML & CSS",
-                "level": "experienced",
+                "level": "comfortable",
                 "description": "Web development for this portfolio site.",
                 "uses": 
                 [
@@ -31,11 +31,35 @@
         [
             {
                 "name": "Git & GitHub",
-                "level": "experienced",
+                "level": "comfortable",
                 "description": "Version control for all solo and team projects.",
                 "uses": 
                 [
                     "All programming projects, especially collaborative ones"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "Hardware Tools",
+        "skills":
+        [
+            {
+                "name": "Raspberry PI",
+                "level": "familiar",
+                "description": "",
+                "uses": 
+                [
+                    "RPI Car for TEJ4M"
+                ]
+            },
+            {
+                "name": "Arduino",
+                "level": "familiar",
+                "description": "",
+                "uses": 
+                [
+                    "Different projects for TEJ3M & TEJ4M"
                 ]
             }
         ]

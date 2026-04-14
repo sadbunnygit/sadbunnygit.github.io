@@ -20,8 +20,8 @@
 
 body 
 {
-    margin: 0;
-    padding-top: 30px; /*so nav bar doesnt cover :)*/
+    margin: 40px;
+    padding-top: 20px; /*so nav bar doesnt cover :)*/
     background-color: rgb(236, 231, 243);
 }
 

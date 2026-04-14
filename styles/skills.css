@@ -36,5 +36,11 @@
 }
 
 /* ADD MORE EXPEREINCE LEVELS AND THIER COLOURS HERE@!!!!!!! */
-.experienced { border-left: 4px solid #4caf50; }
+.card.proficient { border-left: 8px solid #4caf50; }
+.tag.proficient { background-color: #4caf50; }
+.card.comfortable { border-left: 8px solid #4edfff; }
+.tag.comfortable { background-color: #4edfff; }
+.card.familiar { border-left: 8px solid #a1a1a1; }
+.tag.familiar { background-color: #a1a1a1; }
+
 
