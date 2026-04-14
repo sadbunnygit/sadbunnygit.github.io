@@ -45,7 +45,7 @@
 .skill-card.comfortable { border-left: 8px solid #4edfff;}
 .skill-tag.comfortable { background-color: #4edfff44; color: #0e9fbf;}
 .skill-card.familiar { border-left: 8px solid #a1a1a1; }
-.skill-tag.familiar { background-color: #a1a1a144; color: #616161;}
-/* for the tag of the main colour -> background add 44 at the end, color substract each value by 64 (16*4) */
+.skill-tag.familiar { background-color: #a1a1a144; color: #a1a1a1;}
+/* for the tag of the main colour -> background add 44 at the end, color substract each value by 64 (16*4) - grey(familiar stays same) */
 
 

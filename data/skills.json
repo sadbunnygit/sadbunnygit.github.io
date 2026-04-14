@@ -14,13 +14,59 @@
                 ]
             },
             {
-                "name": "HTML & CSS",
+                "name": "HTML/CSS/JS",
                 "level": "comfortable",
                 "description": "Web development for this portfolio site.",
                 "uses": 
                 [
                     "This portfolio website",
                     "Frontend for WEA project"
+                ]
+            },
+            {
+                "name": "Python",
+                "level": "comfortable",
+                "description": "",
+                "uses": 
+                [
+                    "WEA project",
+                    "RPI Car for TEJ4M"
+                ]
+            },
+            {
+                "name": "Racket",
+                "level": "familiar",
+                "description": "silly functional programming",
+                "uses": 
+                [
+                    "cs135"
+                ]
+            },
+            {
+                "name": "Java",
+                "level": "comfortable",
+                "description": "OOP again",
+                "uses": 
+                [
+                    "ics4u"
+                ]
+            },
+            {
+                "name": "C",
+                "level": "comfortable",
+                "description": "",
+                "uses": 
+                [
+                    "cs136"
+                ]
+            },
+            {
+                "name": "Bash",
+                "level": "familiar",
+                "description": "",
+                "uses": 
+                [
+                    "cs136L", "and some little stuff for testing i used in cs246"
                 ]
             }
         ]

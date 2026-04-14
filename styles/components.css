@@ -33,12 +33,15 @@ a
 {
     color: var(--link);
 }
-a:hover 
+a:hover
 {
     color: var(--accent-soft);
 }
 
-
+summary:hover 
+{
+    color: var(--accent-strong);
+}
 
 .tooltipWrapper 
 {
