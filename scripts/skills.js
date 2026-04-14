@@ -10,7 +10,7 @@ fetch('../data/skills.json')
 // load the html for that data
 function renderSkills(data) 
 {
-    const root = document.getElementById("skillsSection");
+    const root = document.getElementById("skills");
 
     data.forEach(section => 
     {
