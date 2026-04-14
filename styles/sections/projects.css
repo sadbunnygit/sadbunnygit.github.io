@@ -1,43 +1,75 @@
+#projects 
+{
+    padding: 40px 20px;
+}
 
 .projects-wrapper 
 {
+    margin: 50px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
 .projects-container 
 {
     display: flex;
-    gap: 20px;
-
-    overflow-x: auto;
+    overflow-x: hidden;   /* only one card visible */
     scroll-behavior: smooth;
 
-    padding: 20px;
+    width: 100%;
 
     scroll-snap-type: x mandatory;
 }
-.projects-container::-webkit-scrollbar 
-{
-    display: none;
-}
 
 .project-card 
 {
-    min-width: 300px;
+    min-width: 100%;      /* one full screen per project */
+    flex-shrink: 0;
+
+    box-sizing: border-box;
+
     background: var(--card);
-    padding: 20px;
+    border: 1px solid var(--card-border);
     border-radius: 12px;
 
+    padding: 24px;
+
     scroll-snap-align: start;
-    flex-shrink: 0;
-}
-.project-card 
-{
-    transition: transform 0.2s ease;
+
 }
 .project-card:hover 
 {
-    transform: translateY(-5px);
+    border: 1px solid var(--accent);
+}
+
+
+.scroll-btn 
+{
+    background: var(--accent);
+    border: none;
+
+    color: white;
+    font-size: 22px;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.scroll-btn:hover {
+    background: var(--accent-strong);
+    transform: scale(1.05);
+}
+
+.scroll-btn:active {
+    transform: scale(0.95);
 }
