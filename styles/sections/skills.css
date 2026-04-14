@@ -1,12 +1,12 @@
 
-.grid 
+.skill-grid 
 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 12px;
     margin-top: 10px;
 }
-.card 
+.skill-card 
 {
     border: 1px solid var(--card-border);
     border-radius: 12px;
@@ -14,17 +14,17 @@
     background: var(--card);
     transition: transform 0.15s ease;
 }
-.card:hover 
+.skill-card:hover 
 {
     transform: translateY(-2px);
 }
-.card h3
+.skill-card h3
 {
     padding: 0;
     margin: 5px;
 }
 
-.tag 
+.skill-tag 
 {
     display: inline-block;
     margin-top: 6px;
@@ -35,12 +35,12 @@
     margin-right: 5px;
 }
 
-.card.proficient { border-left: 8px solid #4caf50; }
-.tag.proficient { background-color: #4caf5044; color: #0c6f10}
-.card.comfortable { border-left: 8px solid #4edfff;}
-.tag.comfortable { background-color: #4edfff44; color: #0e9fbf;}
-.card.familiar { border-left: 8px solid #a1a1a1; }
-.tag.familiar { background-color: #a1a1a144; color: #616161;}
+.skill-card.proficient { border-left: 8px solid #4caf50; }
+.skill-tag.proficient { background-color: #4caf5044; color: #0c6f10}
+.skill-card.comfortable { border-left: 8px solid #4edfff;}
+.skill-tag.comfortable { background-color: #4edfff44; color: #0e9fbf;}
+.skill-card.familiar { border-left: 8px solid #a1a1a1; }
+.skill-tag.familiar { background-color: #a1a1a144; color: #616161;}
 /* for the tag of the main colour -> background add 44 at the end, color substract each value by 64 (16*4) */
 
 

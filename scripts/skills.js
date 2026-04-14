@@ -20,17 +20,17 @@ function renderSkills(data)
         title.textContent = section.category;
 
         const grid = document.createElement("div"); // make it a grid, so nice alignment
-        grid.className = "grid";
+        grid.className = "skill-grid";
 
         section.skills.forEach(skill => 
         {
             const card = document.createElement("div"); // create the card for each skill
-            card.className = `card ${skill.level}`; // different style based on level (colour changes)
+            card.className = `skill-card ${skill.level}`; // different style based on level (colour changes)
 
             card.innerHTML = // write the text
             `
                 <h3>${skill.name}</h3>
-                <span class="tag ${skill.level}">${skill.level}</span>
+                <span class="skill-tag ${skill.level}">${skill.level}</span>
                 <p>${skill.description || ""}</p>
             `;
 
