@@ -13,8 +13,9 @@
         <link rel="stylesheet" href="./styles/specialClass.css">
             <!-- css styling by section -->
             <link rel="stylesheet" href="./styles/sections/about.css">
-            <link rel="stylesheet" href="./styles/sections/skills.css">
             <link rel="stylesheet" href="./styles/sections/nav.css">
+            <link rel="stylesheet" href="./styles/sections/skills.css">
+            <link rel="stylesheet" href="./styles/sections/projects.css">
     </head>
 
     <body>
@@ -78,50 +79,44 @@
         
         <section id="projects">
             <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h4>WEA Project</h4>
-                </li>
-                <li>
-                    <h4>Waterloo is Not Love Island [DEMO]</h4>
-                    <p>
-                        This was made for the University of Waterloo Game Development Club Fall 2025 72 hour Game Jam. 
-                        It was done with the Godot game engine. 
-                        I was in a team of 6, where I worked on developing the story, contributing to programming and GitHub project management.
-                    </p>
-                    <a href="https://saarth-rajan.itch.io/waterloo-is-not-love-island-demo" target="_blank">Itch.io Page</a>
-                    <a href="https://github.com/SaarthRajan/UWGameJam25" target="_blank">Git Hub Repo</a>
-                </li>
-                <li>
-                    <h4>Dots and Boxes (Java)</h4>
-                    <p>
-                        A Java-based multiple player implementation of the classic Dots and Boxes.
-                    </p>
-                    <a href="" download>
-                        Download & Play (Java Required)
-                    </a>
-                </li>
-                <li>
-                    <h4>MASK</h4>
-                    <p>
-                        This was made for the University of Waterloo Game Development Club Winter 2026 72 hour Game Jam. 
-                        This time I made a game by myself, because if I was on a team I knew I would let them down as I was 
-                        not able to work on this the whole 72 hours. I had prior engagments. So I just made a simple platformer, but 
-                        I intend to extend this game a lot. 
-                        This was made with Unity.
-                    </p>
-                    <details>
-                        <summary> Press me to Play! </summary>
-                        <iframe 
-                            src="games/maskGame/index.html" 
-                            width="960" 
-                            height="642" 
-                            style="border:2px solid #7832ad;"
-                            >
-                        </iframe>
-                    </details>
-                </li>
-            </ul>
+
+            <div class="projects-wrapper">
+
+                <button class="scroll-btn left" onclick="scrollProjects(-1)">‹</button>
+
+                <div class="projects-container" id="projectsContainer">
+
+                    <div class="project-card">
+                        <h3>WEA Project</h3>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Waterloo is Not Love Island</h3>
+                        <p>72-hour Game Jam project made with Godot.</p>
+                        <a href="https://saarth-rajan.itch.io/waterloo-is-not-love-island-demo" target="_blank">Itch.io</a>
+                        <a href="https://github.com/SaarthRajan/UWGameJam25" target="_blank">GitHub</a>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Dots and Boxes (Java)</h3>
+                        <p>Multiplayer Java implementation of the classic game.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>MASK</h3>
+                        <p>Solo Unity platformer made for a game jam.</p>
+
+                        <details>
+                            <summary>Play</summary>
+                            <iframe src="games/maskGame/index.html"></iframe>
+                        </details>
+                    </div>
+
+                </div>
+
+                <button class="scroll-btn right" onclick="scrollProjects(1)">›</button>
+
+            </div>
         </section>
 
         <section id="edu">
@@ -158,6 +153,7 @@
         <!-- Scripts -->
         <script src="./scripts/theme.js" defer></script>
         <script src="./scripts/skills.js"></script>
+        <script src="./scripts/projects.js"></script>
 
     </body>
 </html>

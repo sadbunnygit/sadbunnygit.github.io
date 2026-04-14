@@ -1,0 +1,43 @@
+
+.projects-wrapper 
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.projects-container 
+{
+    display: flex;
+    gap: 20px;
+
+    overflow-x: auto;
+    scroll-behavior: smooth;
+
+    padding: 20px;
+
+    scroll-snap-type: x mandatory;
+}
+.projects-container::-webkit-scrollbar 
+{
+    display: none;
+}
+
+.project-card 
+{
+    min-width: 300px;
+    background: var(--card);
+    padding: 20px;
+    border-radius: 12px;
+
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+.project-card 
+{
+    transition: transform 0.2s ease;
+}
+.project-card:hover 
+{
+    transform: translateY(-5px);
+}
