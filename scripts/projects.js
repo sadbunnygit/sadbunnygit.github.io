@@ -3,7 +3,7 @@
 function scrollProjects(direction) 
 {
     const container = document.getElementById("projectsContainer");
-    const width = container.offsetWidth;
+    const width = container.offsetWidth/3;
 
     container.scrollBy
     ({
