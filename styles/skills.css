@@ -1,0 +1,24 @@
+
+.grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+    margin-top: 10px;
+}
+.card 
+{
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 12px;
+    background: #fafafa;
+    transition: transform 0.15s ease;
+}
+.card:hover 
+{
+    transform: translateY(-2px);
+}
+
+.experienced { border-left: 4px solid #4caf50; }
+.secondary { border-left: 4px solid #2196f3; }
+.exposure { border-left: 4px solid #ff9800; opacity: 0.95; }
