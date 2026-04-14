@@ -1,24 +1,25 @@
 
 
-function toggleTheme() 
+document.addEventListener("DOMContentLoaded", () => 
 {
-    document.body.classList.toggle("dark");
+    const toggle = document.getElementById("themeToggle");
 
-    // remember choice
-    if (document.body.classList.contains("dark")) 
+    toggle.addEventListener("click", () => 
     {
-        localStorage.setItem("theme", "dark");
-    } 
-    else     
-    {
-        localStorage.setItem("theme", "light");
-    }
-}
+        document.body.classList.toggle("dark");
+        // save theme
+        if (document.body.classList.contains("dark")) 
+        {
+            localStorage.setItem("theme", "dark");
+        } 
+        else 
+        {
+            localStorage.setItem("theme", "light");
+        }
+    });
 
-window.onload = function () 
-{
-    if (localStorage.getItem("theme") === "dark") 
-    {
+    // load saved theme
+    if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark");
     }
-};
+});

@@ -23,16 +23,19 @@ nav ul li:last-child
 {
     margin-left: auto; /* moves the last item to the end*/
 }
-nav ul li a /* change the style of a link in the nav list */
+.nav-item 
 {
-    margin: 0;
-    display: block; /* turns into button, u can click padding, not just text*/
-    color: var(--accent-text); /* the colour of the text  */
-    padding: 10px 14px; /* a box around the text, first is top/bot, second is l/r  */
-    text-align: center; /* centers the text in the padding box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 14px;
+    color: var(--accent-text);
     text-decoration: none;
+
+    cursor: pointer;
 }
-nav ul li a:hover /* this changes the format of a link in a list when the cursor hovers it */
+.nav-item:hover 
 {
-    background-color: var(--accent-strong); /*sets the background of the colour (area is the padding)*/
+    background-color: var(--accent-strong);
 }
