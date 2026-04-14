@@ -1,6 +1,8 @@
 nav 
 {
     position: sticky; /* Keeps it on the screen */
+    margin: 0;
+    padding: 0;
     top: 0;          /* Stick to the top */
     left: 0;         /* Start at the left edge */
     width: 100%;     /* Full width */
@@ -14,13 +16,16 @@ nav ul
     padding: 0px; /*removes the browser’s default INNER spacing around the <ul> */
     overflow: auto; /* need overflow because of float, float so its not inline meaning without overflow it will collaspse*/
     background-color: var(--accent); /* sets the background color of the list */
+    display: flex;
+    align-items: center;
 }
-nav ul li 
+nav ul li:last-child 
 {
-    float: left; /* makes items line up starting from left */
+    margin-left: auto; /* moves the last item to the end*/
 }
 nav ul li a /* change the style of a link in the nav list */
 {
+    margin: 0;
     display: block; /* turns into button, u can click padding, not just text*/
     color: var(--accent-text); /* the colour of the text  */
     padding: 10px 14px; /* a box around the text, first is top/bot, second is l/r  */
