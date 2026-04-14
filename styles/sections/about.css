@@ -1,0 +1,36 @@
+.about-container 
+{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap; /* responsive fallback */
+}
+
+.about-photo img 
+{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px; /* or 50% for circle */
+    border: 2px solid var(--accent);
+}
+
+.about-text 
+{
+    flex: 1;
+    min-width: 250px;
+}
+
+#about a 
+{
+    color: var(--link);
+    text-decoration: none;
+    font-weight: 600;
+
+    position: relative;
+    transition: all 0.2s ease;
+}
+#about a:hover 
+{
+    color: var(--accent-soft);
+}

@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="./styles/components.css">
         <link rel="stylesheet" href="./styles/specialClass.css">
             <!-- css styling by section -->
+            <link rel="stylesheet" href="./styles/sections/about.css">
             <link rel="stylesheet" href="./styles/sections/skills.css">
             <link rel="stylesheet" href="./styles/sections/nav.css">
     </head>
@@ -45,15 +46,30 @@
 
         <section id="about">
             <h2>About Me</h2>
-            <p>
-                Hi, My name is Danelle Folliet! I am a University of Waterloo Honours Mathematics student, 
-                with a strong interest in computer science. I consider it one of my hobbies, 
-                some <a href="#projects">projects</a> of mine were just for fun!
-                Check out some of my other hobbies <a href="#hobbies">here.</a> 
-                Another one of my hobbies that overlaps with my career(change this part idk)
-                is Brazilian Jiu-Jitsu (BJJ). It's where I got my first work experience, 
-                learn more about my work experience <a href="#work">here.</a>
-            </p>
+            <div class="about-container">
+                
+                <div class="about-photo">
+                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQEB7HEn0TzVQw/profile-displayphoto-scale_400_400/B4EZoIzGJSKcAg-/0/1761084204018?e=1777507200&v=beta&t=A4hxKJzSrbeHNZYt9zB2Dd13DHrZxik29lF9YhdRlJc" alt="Profile photo of Danelle Folliet">
+                </div>
+
+                <div class="about-text">
+                    <p>
+                        Hi, I’m Danelle Folliet, an Honours Mathematics student at the University of Waterloo 
+                        with a strong interest in computer science and software development.
+                    </p>
+                    <p>
+                        I enjoy building projects in my spare time.
+                        You can check out some of my work in the <a href="#projects">Projects</a> section.
+                    </p>
+                    <p>
+                        Outside of academics and programming, I train Brazilian Jiu-Jitsu (BJJ), 
+                        and it's where I got my first work experience.
+                        Learn more about my work experience <a href="#work">here</a>, or explore other interests in my 
+                        <a href="#hobbies">Hobbies</a> section.
+                    </p>
+                </div>
+
+            </div>
         </section>
 
         <section id="skills">
