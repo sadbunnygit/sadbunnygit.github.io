@@ -14,29 +14,26 @@
 .projects-container 
 {
     display: flex;
-    overflow-x: hidden;   /* only one card visible */
+    overflow-x: auto;  
     scroll-behavior: smooth;
-
-    width: 100%;
-
+    gap: 20px;
     scroll-snap-type: x mandatory;
 }
-
+.projects-container::-webkit-scrollbar 
+{
+    display: none;
+}
 .project-card 
 {
-    min-width: 100%;      /* one full screen per project */
-    flex-shrink: 0;
-
-    box-sizing: border-box;
-
+    flex: 0 0 calc(33.333%);     /* one full screen per 3 projects */
     background: var(--card);
-    border: 1px solid var(--card-border);
     border-radius: 12px;
+    padding: 20px;
 
-    padding: 24px;
-
+    cursor: pointer;
     scroll-snap-align: start;
 
+    transition: box-shadow 0.25s ease;
 }
 .project-card:hover 
 {
@@ -65,11 +62,13 @@
     transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.scroll-btn:hover {
+.scroll-btn:hover 
+{
     background: var(--accent-strong);
     transform: scale(1.05);
 }
 
-.scroll-btn:active {
+.scroll-btn:active 
+{
     transform: scale(0.95);
 }
