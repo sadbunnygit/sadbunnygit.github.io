@@ -16,7 +16,7 @@ function renderSkills(data)
     {
         const sectionEl = document.createElement("div"); // create the box for the type of skill
 
-        const title = document.createElement("h2"); // create it's header
+        const title = document.createElement("h3"); // create it's header
         title.textContent = section.category;
 
         const grid = document.createElement("div"); // make it a grid, so nice alignment
