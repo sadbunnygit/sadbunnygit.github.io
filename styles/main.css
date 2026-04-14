@@ -4,6 +4,7 @@
 .wipBanner 
 {
     position: fixed;
+    display: flex;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(15deg);
@@ -11,6 +12,25 @@
     z-index: 9999;
     font-size: 5rem; /* 5 times the root font size */
     font-weight: 900; /* boldness basically*/
+}
+.wipBanner button 
+{
+    background: rgba(255, 0, 0, 0.15);
+    border: none;
+
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;  /* makes it a circle */
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body 
@@ -24,18 +44,4 @@ html
 {
     scroll-behavior: smooth;
     scroll-padding-top: 45px; /* so when auto scrolling nav doesnt cover header */
-}
-
-/* NAVIGATION LIST STUFF */
-
-/*END OF NAV LIST*/::-webkit-input-placeholder
-
-
-details:not([open])use
-{
-    cursor: help;
-}
-details summary:hover
-{
-    color: var(--link); /* mayve move this back into the closed portion*/
 }
