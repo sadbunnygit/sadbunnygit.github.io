@@ -15,10 +15,16 @@ button
     color:var(--accent-text);
     border:none;
     cursor:pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 button:hover
 {
-    background-color: var(--accent-strong); /*sets the background of the colour (area is the padding)*/
+    background-color: var(--accent-soft); /*sets the background of the colour (area is the padding)*/
+    transform: scale(1.05);
+}
+button:active 
+{
+    transform: scale(0.95);
 }
 
 

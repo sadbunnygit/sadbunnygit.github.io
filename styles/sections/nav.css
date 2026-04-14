@@ -39,6 +39,7 @@ nav ul li:last-child
 .nav-item:hover 
 {
     background-color: var(--accent-strong);
+    color: var(--accent-text);
 }
 #themeToggle 
 {
