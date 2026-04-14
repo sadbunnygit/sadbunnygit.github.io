@@ -1,0 +1,25 @@
+
+
+:root 
+{
+    --bg: #faf9ff;          
+    --text: #1a1a1a;
+    
+    --card: #e3e3e3;
+    --card-border: #e6d9ff;
+    --tag: #eaeaeaaa
+
+    --accent: #b388ff;
+    --accent-strong: #9c6eff;
+    --accent-soft: #d1b7ff;
+
+    --link: #7a4fd3;
+}
+
+body.dark 
+{
+    --bg: #121212;
+    --text: #eaeaea;
+    --card: #1e1e1e;
+    --accent: #b388ff;
+}

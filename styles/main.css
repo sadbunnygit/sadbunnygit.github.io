@@ -1,9 +1,4 @@
 
-:root /*these are variables, need var keeyowrd touse*/
-{
-    --horiBoxesList-box-width: 300px;
-}
-
 
 /* Work in Progress Banner */
 .wipBanner 
@@ -22,7 +17,8 @@ body
 {
     margin: 40px;
     padding-top: 20px; /*so nav bar doesnt cover :)*/
-    background-color: rgb(236, 231, 243);
+    background-color: var(--bg);
+    color: var(--text);
 }
 
 html 
@@ -37,7 +33,7 @@ nav
     top: 0;          /* Stick to the top */
     left: 0;         /* Start at the left edge */
     width: 100%;     /* Full width */
-    background-color: #333333; 
+    background-color: var(--accent); 
     z-index: 1000;   /* Make sure it stays above other content */
 }
 nav ul 
@@ -46,7 +42,7 @@ nav ul
     margin: 0px; /*removes the browser’s default OUTER spacing around the <ul> */
     padding: 0px; /*removes the browser’s default INNER spacing around the <ul> */
     overflow: auto; /* need overflow because of float, float so its not inline meaning without overflow it will collaspse*/
-    background-color: #333333; /* sets the background color of the list */
+    background-color: var(--accent); /* sets the background color of the list */
 }
 nav ul li 
 {
@@ -62,64 +58,16 @@ nav ul li a /* change the style of a link in the nav list */
 }
 nav ul li a:hover /* this changes the format of a link in a list when the cursor hovers it */
 {
-    background-color: #29073c; /*sets the background of the colour (area is the padding)*/
+    background-color: var(--accent-strong); /*sets the background of the colour (area is the padding)*/
 }
-/*END OF NAV LIST*/
-
-/*horiBoxesList: floating boxes aligned horizantally*/
-.horiBoxesList 
-{
-    border-color: #8d61a8; 
-    border-style: dotted;
-    border-width: 4px;
-    list-style-type: none; /*this removes the bullet points*/
-    margin: 10px; /*removes the browser’s default OUTER spacing around the <ul> */
-    padding: 10px; /*removes the browser’s default INNER spacing around the <ul> */
-    overflow: auto;
-    color: rgb(39, 0, 230);
-}
-.horiBoxesList li 
-{
-    border-style: dashed;
-    border-color: #8d61a8; 
-    border-width: 2px;
-    float: left;
-    padding: 10px 14px; /* a box around the text, first is top/bot, second is l/r  */
-    text-align: center; /* centers the text in the padding box */
-    width: var(--horiBoxesList-box-width);
-    margin: 10px; /* space on the outside of the box */
-}
+/*END OF NAV LIST*/::-webkit-input-placeholder
 
 
-.innerList
-{
-    color: rgb(0, 130, 230);
-    border-style: inset;
-    border-color: #97fcff; 
-    border-width: 2px;
-    padding: 0;
-    list-style-type: none; /*this removes the bullet points*/
-
-}
-.innerList li
-{
-    border-style: groove;
-    border-color: #aeaeae; 
-    float: none;
-    padding: 10px 14px; 
-    text-align: left; 
-    width: calc(var(--horiBoxesList-box-width) / 1.5);
-}
-.innerList details
-{
-    word-wrap: normal;
-}
-
-details:not([open])
+details:not([open])use
 {
     cursor: help;
 }
 details summary:hover
 {
-    color: #8d61a8; /* mayve move this back into the closed portion*/
+    color: var(--link); /* mayve move this back into the closed portion*/
 }

@@ -8,10 +8,10 @@
 }
 .card 
 {
-    border: 1px solid #e5e5e5;
+    border: 1px solid var(--card-border);
     border-radius: 12px;
     padding: 12px;
-    background: #fafafa;
+    background: var(--card);
     transition: transform 0.15s ease;
 }
 .card:hover 
@@ -31,7 +31,7 @@
     font-size: 12px;
     padding: 3px 8px;
     border-radius: 999px;
-    background: #eaeaea;
+    background: var(--tag);
     margin-right: 5px;
 }
 
