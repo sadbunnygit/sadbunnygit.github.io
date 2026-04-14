@@ -49,6 +49,11 @@ function renderSkills(data)
                     ul.appendChild(li);
                 });
 
+                // open details by clicking the card anywhere
+                card.addEventListener("click", () => 
+                {
+                    details.open = (details.open ? false : true);
+                });
                 // add the stuff into eachother
                 details.appendChild(summary); 
                 details.appendChild(ul);
