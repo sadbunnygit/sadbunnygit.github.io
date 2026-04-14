@@ -9,14 +9,16 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    border: 2px solid purple; 
 }
 
 .projects-container 
 {
+    border: 2px dotted rgb(0, 28, 128); 
     display: flex;
+    width: 100%;
     overflow-x: auto;  
     scroll-behavior: smooth;
-    gap: 20px;
     scroll-snap-type: x mandatory;
 }
 .projects-container::-webkit-scrollbar 
@@ -25,13 +27,13 @@
 }
 .project-card 
 {
-    flex: 0 0 calc(33.333%);     /* one full screen per 3 projects */
+    margin: 10px;
+    flex: 0 0 calc((100% / 3) - 60px); 
     background: var(--card);
     border-radius: 12px;
     padding: 20px;
 
     cursor: pointer;
-    scroll-snap-align: start;
 
     transition: box-shadow 0.25s ease;
 }
