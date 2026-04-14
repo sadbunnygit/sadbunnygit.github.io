@@ -22,7 +22,7 @@ nav ul li
 nav ul li a /* change the style of a link in the nav list */
 {
     display: block; /* turns into button, u can click padding, not just text*/
-    color: white; /* the colour of the text  */
+    color: var(--accent-text); /* the colour of the text  */
     padding: 10px 14px; /* a box around the text, first is top/bot, second is l/r  */
     text-align: center; /* centers the text in the padding box */
     text-decoration: none;

@@ -1,8 +1,25 @@
 
 
-
-
-
+input,button
+{
+    font-family:  var(--main-font);
+    padding:10px;
+    border-radius: 8px;
+    margin-top: 5px;
+    border-color: var(--accent-strong);
+    width: 180px;
+}
+button
+{
+    background: var(--accent);
+    color:var(--accent-text);
+    border:none;
+    cursor:pointer;
+}
+button:hover
+{
+    background-color: var(--accent-strong); /*sets the background of the colour (area is the padding)*/
+}
 
 
 
@@ -18,8 +35,8 @@
     left: 105%;
     width: 220px;
 
-    background: #19012b;
-    color: rgb(235, 217, 255);
+    background: var(--accent-soft);
+    color: var(--text);
     padding: 8px;
     border-radius: 6px;
     font-size: 12px;

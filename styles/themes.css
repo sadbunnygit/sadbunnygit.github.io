@@ -12,6 +12,7 @@
     --accent: #b388ff;
     --accent-strong: #9c6eff;
     --accent-soft: #d1b7ff;
+    --accent-text: #ffffff; 
 
     --link: #7a4fd3;
 }
@@ -20,6 +21,16 @@ body.dark
 {
     --bg: #121212;
     --text: #eaeaea;
+
     --card: #1e1e1e;
+    --card-border: #2a2540;
+
+    --tag: #2a2a2a;
+
     --accent: #b388ff;
+    --accent-strong: #d1b7ff;
+    --accent-soft: #342540;
+    --accent-text-colour: #24003b; 
+
+    --link: #caa6ff;
 }
