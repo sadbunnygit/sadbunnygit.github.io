@@ -15,8 +15,7 @@
 
 body 
 {
-    margin: 40px;
-    padding-top: 20px; /*so nav bar doesnt cover :)*/
+    margin: 0;
     background-color: var(--bg);
     color: var(--text);
 }

@@ -1,6 +1,6 @@
 nav 
 {
-    position: fixed; /* Keeps it on the screen */
+    position: sticky; /* Keeps it on the screen */
     top: 0;          /* Stick to the top */
     left: 0;         /* Start at the left edge */
     width: 100%;     /* Full width */
