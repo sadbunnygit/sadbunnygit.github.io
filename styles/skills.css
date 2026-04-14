@@ -35,12 +35,12 @@
     margin-right: 5px;
 }
 
-/* ADD MORE EXPEREINCE LEVELS AND THIER COLOURS HERE@!!!!!!! */
 .card.proficient { border-left: 8px solid #4caf50; }
-.tag.proficient { background-color: #4caf50; }
-.card.comfortable { border-left: 8px solid #4edfff; }
-.tag.comfortable { background-color: #4edfff; }
+.tag.proficient { background-color: #4caf5044; color: #0c6f10}
+.card.comfortable { border-left: 8px solid #4edfff;}
+.tag.comfortable { background-color: #4edfff44; color: #0e9fbf;}
 .card.familiar { border-left: 8px solid #a1a1a1; }
-.tag.familiar { background-color: #a1a1a1; }
+.tag.familiar { background-color: #a1a1a144; color: #616161;}
+/* for the tag of the main colour -> background add 44 at the end, color substract each value by 64 (16*4) */
 
 
