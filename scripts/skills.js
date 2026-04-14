@@ -30,6 +30,7 @@ function renderSkills(data)
             card.innerHTML = // write the text
             `
                 <h3>${skill.name}</h3>
+                <span class="tag">${skill.level}</span>
                 <p>${skill.description || ""}</p>
             `;
 

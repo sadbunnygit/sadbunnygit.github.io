@@ -22,3 +22,14 @@
 .experienced { border-left: 4px solid #4caf50; }
 .secondary { border-left: 4px solid #2196f3; }
 .exposure { border-left: 4px solid #ff9800; opacity: 0.95; }
+
+.tag 
+{
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: #eaeaea;
+    margin-right: 5px;
+}
