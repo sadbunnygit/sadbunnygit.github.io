@@ -22,6 +22,7 @@ body
 
 html 
 {
+    scroll-behavior: smooth;
     scroll-padding-top: 45px; /* so when auto scrolling nav doesnt cover header */
 }
 
