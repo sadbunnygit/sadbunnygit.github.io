@@ -16,6 +16,7 @@
             <link rel="stylesheet" href="./styles/sections/nav.css">
             <link rel="stylesheet" href="./styles/sections/skills.css">
             <link rel="stylesheet" href="./styles/sections/projects.css">
+            <link rel="stylesheet" href="./styles/sections/edu.css">
     </head>
 
     <body>
@@ -29,7 +30,7 @@
             <h1>Danelle Folliet</h1>
             <p>University of Waterloo Student</p>
         </header>
-        
+
         <nav> <!-- navigation section-->
             <ul> <!-- create a list -->
                 <li><a href="#about" class="nav-item">About</a></li> <!-- li means list element, a means link type -->
@@ -88,15 +89,45 @@
 
         <section id="edu">
             <h2>Education</h2>
-            <ul>
-                <li>
-                    <h4>University of Waterloo</h4>
-                    <p>
-                        Honours Mathematics (Current Student)
-                    </p>
-                </li>
-            </ul>
-        </section>
+            <div class="edu-wrapper">
+                <div class="edu-card">
+                    <img 
+                        class="edu-logo" 
+                        src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/University_of_Waterloo_seal.svg/500px-University_of_Waterloo_seal.svg.png" 
+                        alt="University of Waterloo logo"
+                    />
+
+                    <div class="edu-content">
+                        <h3>University of Waterloo</h3>
+                        <p class="edu-degree">
+                            Honours Mathematics (Current Student)
+                        </p>
+
+                        <p class="edu-meta">
+                            Waterloo, Ontario, Canada
+                        </p>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <img 
+                        class="edu-logo" 
+                        src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Glebe_Official.gif" 
+                        alt="GCI Logo"
+                    />
+
+                    <div class="edu-content">
+                        <h3>Glebe Collegiate Institute</h3>
+                        <p class="edu-degree">
+                            Highschool Diploma (Honour Role & Silver Medal)
+                        </p>
+
+                        <p class="edu-meta">
+                            Ottawa, Ontario, Canada
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
 
         <section id="work">
             <h2>Work Experience</h2>
