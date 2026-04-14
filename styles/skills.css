@@ -18,10 +18,11 @@
 {
     transform: translateY(-2px);
 }
-
-.experienced { border-left: 4px solid #4caf50; }
-.secondary { border-left: 4px solid #2196f3; }
-.exposure { border-left: 4px solid #ff9800; opacity: 0.95; }
+.card h3
+{
+    padding: 0;
+    margin: 5px;
+}
 
 .tag 
 {
@@ -33,3 +34,7 @@
     background: #eaeaea;
     margin-right: 5px;
 }
+
+/* ADD MORE EXPEREINCE LEVELS AND THIER COLOURS HERE@!!!!!!! */
+.experienced { border-left: 4px solid #4caf50; }
+
