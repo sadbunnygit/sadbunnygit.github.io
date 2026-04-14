@@ -22,6 +22,17 @@ button:hover
 }
 
 
+/*links*/
+a 
+{
+    color: var(--link);
+}
+a:hover 
+{
+    color: var(--accent-soft);
+}
+
+
 
 .tooltipWrapper 
 {

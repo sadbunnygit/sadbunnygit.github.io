@@ -20,8 +20,56 @@ function renderProjects(data)
             <h3>${project.title}</h3>
             <p>${project.description || ""}</p>
         `;
+
+
+        card.addEventListener("click", () => 
+        {
+            openProject(project);
+        });
         root.appendChild(card);
     });
+}
+
+function openProject(project) 
+{
+    console.log("Open preview for:", project);
+
+    const preview = document.getElementById("projectPreview");
+
+    document.getElementById("previewTitle").textContent = project.title;
+    document.getElementById("previewDescription").textContent = project.description || "";
+
+    const linksDiv = document.getElementById("previewLinks");
+    linksDiv.innerHTML = "";
+
+    if (project.links) 
+    {
+        project.links.forEach(link => 
+        {
+            const a = document.createElement("a");
+            a.href = link.url;
+            a.target = "_blank";
+            a.textContent = link.label;
+            linksDiv.appendChild(a);
+        });
+    }
+
+    const embedDiv = document.getElementById("previewEmbed");
+    embedDiv.innerHTML = "";
+
+    if (project.embed) 
+    {
+        const iframe = document.createElement("iframe");
+        iframe.src = project.embed;
+        embedDiv.appendChild(iframe);
+    }
+
+    preview.style.display = "flex";
+}
+
+function closeProject() 
+{
+    document.getElementById("projectPreview").style.display = "none";
 }
 
 function scrollProjects(direction) 

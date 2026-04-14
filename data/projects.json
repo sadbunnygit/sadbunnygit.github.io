@@ -27,6 +27,6 @@
     {
         "title": "MASK",
         "description": "Solo Unity platformer game jam project.",
-        "embed": "games/maskGame/index.html"
+        "embed": "../projects/maskGame/index.html"
     }
 ]
