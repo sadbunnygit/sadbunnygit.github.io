@@ -1,0 +1,168 @@
+
+:root /*these are variables, need var keeyowrd touse*/
+{
+    --horiBoxesList-box-width: 300px;
+}
+
+
+/* Work in Progress Banner */
+.wipBanner 
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(15deg);
+    color: rgba(255, 0, 0, 0.716);
+    z-index: 9999;
+    font-size: 5rem; /* 5 times the root font size */
+    font-weight: 900; /* boldness basically*/
+}
+
+body 
+{
+    margin: 0;
+    padding-top: 30px; /*so nav bar doesnt cover :)*/
+    background-color: rgb(236, 231, 243);
+}
+
+html 
+{
+    scroll-padding-top: 45px; /* so when auto scrolling nav doesnt cover header */
+}
+
+/* NAVIGATION LIST STUFF */
+nav 
+{
+    position: fixed; /* Keeps it on the screen */
+    top: 0;          /* Stick to the top */
+    left: 0;         /* Start at the left edge */
+    width: 100%;     /* Full width */
+    background-color: #333333; 
+    z-index: 1000;   /* Make sure it stays above other content */
+}
+nav ul 
+{
+    list-style-type: none; /*this removes the bullet points*/
+    margin: 0px; /*removes the browser’s default OUTER spacing around the <ul> */
+    padding: 0px; /*removes the browser’s default INNER spacing around the <ul> */
+    overflow: auto; /* need overflow because of float, float so its not inline meaning without overflow it will collaspse*/
+    background-color: #333333; /* sets the background color of the list */
+}
+nav ul li 
+{
+    float: left; /* makes items line up starting from left */
+}
+nav ul li a /* change the style of a link in the nav list */
+{
+    display: block; /* turns into button, u can click padding, not just text*/
+    color: white; /* the colour of the text  */
+    padding: 10px 14px; /* a box around the text, first is top/bot, second is l/r  */
+    text-align: center; /* centers the text in the padding box */
+    text-decoration: none;
+}
+nav ul li a:hover /* this changes the format of a link in a list when the cursor hovers it */
+{
+    background-color: #29073c; /*sets the background of the colour (area is the padding)*/
+}
+/*END OF NAV LIST*/
+
+/*horiBoxesList: floating boxes aligned horizantally*/
+.horiBoxesList 
+{
+    border-color: #8d61a8; 
+    border-style: dotted;
+    border-width: 4px;
+    list-style-type: none; /*this removes the bullet points*/
+    margin: 10px; /*removes the browser’s default OUTER spacing around the <ul> */
+    padding: 10px; /*removes the browser’s default INNER spacing around the <ul> */
+    overflow: auto;
+    color: rgb(39, 0, 230);
+}
+.horiBoxesList li 
+{
+    border-style: dashed;
+    border-color: #8d61a8; 
+    border-width: 2px;
+    float: left;
+    padding: 10px 14px; /* a box around the text, first is top/bot, second is l/r  */
+    text-align: center; /* centers the text in the padding box */
+    width: var(--horiBoxesList-box-width);
+    margin: 10px; /* space on the outside of the box */
+}
+
+
+.innerList
+{
+    color: rgb(0, 130, 230);
+    border-style: inset;
+    border-color: #97fcff; 
+    border-width: 2px;
+    padding: 0;
+    list-style-type: none; /*this removes the bullet points*/
+
+}
+.innerList li
+{
+    border-style: groove;
+    border-color: #aeaeae; 
+    float: none;
+    padding: 10px 14px; 
+    text-align: left; 
+    width: calc(var(--horiBoxesList-box-width) / 1.5);
+}
+.innerList details
+{
+    word-wrap: normal;
+}
+
+details:not([open])
+{
+    cursor: help;
+}
+details summary:hover
+{
+    color: #8d61a8; /* mayve move this back into the closed portion*/
+}
+
+
+
+
+/* general (not specefic to this app, like i should copy paste these to otehr css) */
+
+.hidden 
+{
+    display: none;
+}
+
+.tooltipWrapper 
+{
+    position: relative;
+    display: inline-block;
+}
+.tooltip 
+{
+    position: absolute;
+    top: -5px;
+    left: 105%;
+    width: 220px;
+
+    background: #19012b;
+    color: rgb(235, 217, 255);
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 12px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease;
+}
+.tooltipWrapper:hover .tooltip 
+{
+    opacity: 1;
+    visibility: visible;
+}
+.tooltipWrapper input:focus + .tooltip 
+{
+    opacity: 1;
+    visibility: visible;
+}
