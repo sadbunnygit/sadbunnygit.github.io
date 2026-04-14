@@ -27,39 +27,7 @@ html
 }
 
 /* NAVIGATION LIST STUFF */
-nav 
-{
-    position: fixed; /* Keeps it on the screen */
-    top: 0;          /* Stick to the top */
-    left: 0;         /* Start at the left edge */
-    width: 100%;     /* Full width */
-    background-color: var(--accent); 
-    z-index: 1000;   /* Make sure it stays above other content */
-}
-nav ul 
-{
-    list-style-type: none; /*this removes the bullet points*/
-    margin: 0px; /*removes the browser’s default OUTER spacing around the <ul> */
-    padding: 0px; /*removes the browser’s default INNER spacing around the <ul> */
-    overflow: auto; /* need overflow because of float, float so its not inline meaning without overflow it will collaspse*/
-    background-color: var(--accent); /* sets the background color of the list */
-}
-nav ul li 
-{
-    float: left; /* makes items line up starting from left */
-}
-nav ul li a /* change the style of a link in the nav list */
-{
-    display: block; /* turns into button, u can click padding, not just text*/
-    color: white; /* the colour of the text  */
-    padding: 10px 14px; /* a box around the text, first is top/bot, second is l/r  */
-    text-align: center; /* centers the text in the padding box */
-    text-decoration: none;
-}
-nav ul li a:hover /* this changes the format of a link in a list when the cursor hovers it */
-{
-    background-color: var(--accent-strong); /*sets the background of the colour (area is the padding)*/
-}
+
 /*END OF NAV LIST*/::-webkit-input-placeholder
 
 
