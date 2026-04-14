@@ -1,0 +1,32 @@
+[
+    
+    {
+        "title": "sadbunnygit.github.io",
+        "description": "This website!!!!!"
+    },
+    {
+        "title": "WEA Project",
+        "description": "Short description here.",
+        "links": []
+    },
+    {
+        "title": "Waterloo is Not Love Island",
+        "description": "72-hour Game Jam made with Godot.",
+        "links": 
+        [
+            {
+                "label": "Itch.io",
+                "url": "https://saarth-rajan.itch.io/waterloo-is-not-love-island-demo"
+            },
+            {
+                "label": "GitHub",
+                "url": "https://github.com/SaarthRajan/UWGameJam25"
+            }
+        ]
+    },
+    {
+        "title": "MASK",
+        "description": "Solo Unity platformer game jam project.",
+        "embed": "games/maskGame/index.html"
+    }
+]
