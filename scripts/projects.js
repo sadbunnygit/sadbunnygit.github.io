@@ -60,10 +60,10 @@ function openProject(project)
     if (project.game) 
     {
         const iframe = document.createElement("iframe");
-        iframe.src = project.game.src;
-        iframe.width=project.game.width;
-        iframe.height=project.game.height;
-        embedDiv.appendChild(iframe);
+        Object.entries(project.game).forEach(([k, v]) => 
+        {
+            if (v != null) iframe.setAttribute(k, v);
+        });
     }
 
     preview.style.display = "flex";
