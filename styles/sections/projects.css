@@ -97,6 +97,14 @@
     padding: 0;
 }
 
+#previewEmbed
+{
+    text-align:center;
+}
+#previewEmbed iframe
+{
+    border: 5px ridge var(--accent);
+}
 
 #previewLinks a
 {
