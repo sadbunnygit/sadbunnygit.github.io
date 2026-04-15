@@ -33,6 +33,17 @@
     justify-content: center;
 }
 
+#soundButton 
+{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the button horizontally */
+    padding: 10px 20px;
+    z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+
 header
 {
     margin: 0;
