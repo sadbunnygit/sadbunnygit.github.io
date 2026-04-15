@@ -27,6 +27,13 @@
     {
         "title": "MASK",
         "description": "Solo Unity platformer game jam project.",
+        "links": 
+        [
+            {
+                "label": "Itch.io",
+                "url": "https://sadbunnyitch.itch.io/mask-masks"
+            }
+        ],
         "game": 
         {
             "src":"../projects/games/maskGame/index.html",
@@ -46,7 +53,14 @@
             "frameborder":"0",
             "scrolling":"no",
             "allowfullscreen":true
-        }
+        },
+        "links":
+        [
+            {
+                "label": "Scratch.mit.edu",
+                "url": "https://scratch.mit.edu/projects/165264068"
+            }
+        ]
     }
 
 ]
