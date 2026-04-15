@@ -5,8 +5,10 @@ This is my personal portfolio website showcasing projects, skills, experience an
 
 
 ## Features
-- Light mode & Dark mode toggle
-
+- Light/Dark mode toggle
+- Bells & Whistles
+- Demo screen for a few of my projects
+   
 
 ## Authors
 
