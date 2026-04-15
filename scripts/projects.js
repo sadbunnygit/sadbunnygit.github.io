@@ -64,6 +64,7 @@ function openProject(project)
         {
             if (v != null) iframe.setAttribute(k, v);
         });
+        embedDiv.appendChild(iframe);
     }
 
     preview.style.display = "flex";
@@ -72,6 +73,13 @@ function openProject(project)
 function closeProject() 
 {
     document.getElementById("projectPreview").style.display = "none";
+    const embedDiv = document.getElementById("previewEmbed");
+    const iframe = embedDiv.querySelector("iframe");
+    if (iframe) 
+    {
+        iframe.src = "about:blank"; // forces stop
+    }
+    embedDiv.innerHTML = "";
 }
 
 function scrollProjects(direction) 
