@@ -19,9 +19,13 @@
     background: var(--card);
     transition: transform 0.15s ease;
 }
-.skill-card:hover 
+.skill-card:hover,.skill-card.active 
 {
     transform: translateY(-2px);
+}
+.skill-card.active 
+{
+    filter: brightness(0.95);
 }
 .skill-card h3
 {

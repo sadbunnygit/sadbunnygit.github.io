@@ -49,10 +49,21 @@ function renderSkills(data)
                     ul.appendChild(li);
                 });
 
+                var toggle = false;
                 // open details by clicking the card anywhere
                 card.addEventListener("click", () => 
                 {
-                    details.open = (details.open ? false : true);
+                    toggle = (toggle? false : true);
+                    details.open = toggle; 
+                    card.classList.toggle("active", toggle);                   
+                });
+                card.addEventListener("mouseenter", () => 
+                {
+                    details.open = true;
+                });
+                card.addEventListener("mouseleave", () => 
+                {
+                    details.open = false || toggle;
                 });
                 // add the stuff into eachother
                 details.appendChild(summary); 
