@@ -68,14 +68,13 @@
     left: 0;
 }
 
-
 .preview-content 
 {
     background: var(--card);
     padding: 20px;
     border-radius: 12px;
     
-    width: min(900px, 95vw);
+    width: 640px;
     max-height: 90vh;
     overflow-y: auto;
 
