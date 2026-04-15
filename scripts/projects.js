@@ -57,10 +57,14 @@ function openProject(project)
     const embedDiv = document.getElementById("previewEmbed");
     embedDiv.innerHTML = "";
 
-    if (project.game) 
+    if (project.iframe.html) 
+    {
+        embedDiv.innerHTML = project.iframe.html;
+    }
+    else if (project.iframe.data) 
     {
         const iframe = document.createElement("iframe");
-        Object.entries(project.game).forEach(([k, v]) => 
+        Object.entries(project.iframe.data).forEach(([k, v]) => 
         {
             if (v != null) iframe.setAttribute(k, v);
         });
