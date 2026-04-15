@@ -23,7 +23,7 @@
                 "url": "https://github.com/SaarthRajan/UWGameJam25"
             }
         ],
-        "iframe":
+        "demo":
         {
             "html": "<iframe frameborder=\"0\" src=\"https://itch.io/embed-upload/15153701?color=e1dacb\" allowfullscreen width=\"640\" height=\"380\"><a href=\"https://saarth-rajan.itch.io/waterloo-is-not-love-island-demo\">Play Waterloo is Not Love Island [DEMO] on itch.io</a></iframe>"
         }
@@ -38,9 +38,9 @@
                 "url": "https://sadbunnyitch.itch.io/mask-masks"
             }
         ],
-        "iframe": 
+        "demo": 
         {
-            "data":
+            "iframe":
             {
                 "src":"../projects/games/maskGame/index.html",
                 "width":"640",
@@ -50,10 +50,10 @@
     },
     {
         "title": "HELP SAD BUNNY",
-        "description": "I made this at 9 years old :)",
-        "iframe": 
+        "description": "I made this at 10 years old :)",
+        "demo": 
         {
-            "data":
+            "iframe": 
             {
                 "src":"https://scratch.mit.edu/projects/165264068/embed",
                 "width":"485",

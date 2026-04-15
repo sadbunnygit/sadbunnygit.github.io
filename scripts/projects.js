@@ -57,18 +57,21 @@ function openProject(project)
     const embedDiv = document.getElementById("previewEmbed");
     embedDiv.innerHTML = "";
 
-    if (project.iframe.html) 
+    if (project.demo)
     {
-        embedDiv.innerHTML = project.iframe.html;
-    }
-    else if (project.iframe.data) 
-    {
-        const iframe = document.createElement("iframe");
-        Object.entries(project.iframe.data).forEach(([k, v]) => 
+        if (project.demo.html) 
         {
-            if (v != null) iframe.setAttribute(k, v);
-        });
-        embedDiv.appendChild(iframe);
+            embedDiv.innerHTML = project.demo.html;
+        }
+        else if (project.demo.iframe) 
+        {
+            const iframe = document.createElement("iframe");
+            Object.entries(project.demo.iframe).forEach(([k, v]) => 
+            {
+                if (v != null) iframe.setAttribute(k, v);
+            });
+            embedDiv.appendChild(iframe);
+        }
     }
 
     preview.style.display = "flex";
