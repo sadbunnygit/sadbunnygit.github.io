@@ -98,13 +98,6 @@
     padding: 0;
 }
 
-#previewEmbed iframe 
-{
-    width: 960px;
-    height: 642px;
-    border: none;
-    display: block;
-}
 
 #previewLinks a
 {

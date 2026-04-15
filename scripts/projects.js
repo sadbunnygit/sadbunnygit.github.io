@@ -57,10 +57,12 @@ function openProject(project)
     const embedDiv = document.getElementById("previewEmbed");
     embedDiv.innerHTML = "";
 
-    if (project.embed) 
+    if (project.game) 
     {
         const iframe = document.createElement("iframe");
-        iframe.src = project.embed;
+        iframe.src = project.game.src;
+        iframe.width=project.game.width;
+        iframe.height=project.game.height;
         embedDiv.appendChild(iframe);
     }
 

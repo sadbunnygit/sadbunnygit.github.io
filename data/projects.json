@@ -27,6 +27,11 @@
     {
         "title": "MASK",
         "description": "Solo Unity platformer game jam project.",
-        "embed": "../projects/games/maskGame/index.html"
+        "game": 
+        {
+            "src":"../projects/games/maskGame/index.html",
+            "width":"640",
+            "height":"360"
+        }
     }
 ]
