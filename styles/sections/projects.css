@@ -55,34 +55,35 @@
 
 /* preview box */
 
-
-.preview 
+#projectPreview 
 {
-    display: none;
     position: fixed;
+    inset: 0;
+    display: none;
     z-index: 9999;
-
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0, 0, 0, 0.6);
-
     justify-content: center;
     align-items: center;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
 }
+
 
 .preview-content 
 {
     background: var(--card);
     padding: 20px;
     border-radius: 12px;
-
-    width: 90%;
-    max-width: 700px;
+    
+    width: min(900px, 95vw);
+    max-height: 90vh;
+    overflow-y: auto;
 
     position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .preview-close 
@@ -97,12 +98,12 @@
     padding: 0;
 }
 
-.preview iframe 
+#previewEmbed iframe 
 {
-    width: 100%;
-    height: 400px;
+    width: 960px;
+    height: 642px;
     border: none;
-    margin-top: 10px;
+    display: block;
 }
 
 #previewLinks a
