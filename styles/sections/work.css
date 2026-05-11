@@ -1,0 +1,58 @@
+
+#work 
+{
+    padding: 40px 20px;
+}
+
+.work-wrapper
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.work-card 
+{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+
+    padding: 16px 20px;
+
+    max-width: 600px;
+}
+
+.work-logo 
+{
+    width: 128px;
+    height: 128px;
+    object-fit: contain;
+}
+
+.work-content h3 
+{
+    margin: 0;
+}
+
+.work-degree 
+{
+    margin: 4px 0;
+    color: var(--text);
+    opacity: 0.85;
+}
+
+.work-meta
+{
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.work-card:hover 
+{
+    transform: translateY(-2px);
+}
