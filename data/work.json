@@ -15,5 +15,20 @@
             "Developed communication and leadership skills",
             "Helped organize training sessions and events"
         ]
+    },
+    {
+        "title": "Summer Camp Leader",
+        "company": "Ottawa Academy of Martial Arts",
+        "logo":
+        {
+            "src": "https://marketmusclescdn.nyc3.digitaloceanspaces.com/wp-content/uploads/sites/656/2022/03/25215323/favicon.png",
+            "alt": "OAMA Logo"
+        },
+        "location": "Ottawa, Ontario",
+        "timeline": "June 2022 - July 2025 (Seasonal)",
+        "bullets": 
+        [
+            "i was in charge :)"
+        ]
     }
 ]
