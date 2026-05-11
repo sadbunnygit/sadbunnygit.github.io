@@ -2,7 +2,14 @@
     
     {
         "title": "sadbunnygit.github.io",
-        "snippet": "This website! I built this using only HTML,CSS & Javascript code."
+        "snippet": "This website! I built this using only HTML,CSS & Javascript code.",
+        "links":
+        [
+            {
+                "label":"GitHub",
+                "url":"https://github.com/sadbunnygit/sadbunnygit.github.io"
+            }
+        ]
     },
     {
         "title": "Customer Acquisition / Buiness Finder",
