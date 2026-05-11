@@ -83,6 +83,15 @@
                 [
                     "All programming projects, especially collaborative ones"
                 ]
+            },
+            {
+                "name": "Visual Studio (VS) Code",
+                "level": "comfortable",
+                "description": "An open-source code editor developed by Microsoft",
+                "uses": 
+                [
+                    "All programming projects!"
+                ]
             }
         ]
     },
