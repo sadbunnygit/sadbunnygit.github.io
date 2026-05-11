@@ -8,6 +8,7 @@ fetch('../data/projects.json')
 
 function renderProjects(data) 
 {
+    console.log("Debug: Running renderProjects");
     const root = document.getElementById("projectsContainer");
 
     data.forEach(project => 
@@ -18,7 +19,7 @@ function renderProjects(data)
         card.innerHTML = 
         `
             <h3>${project.title}</h3>
-            <p>${project.description || ""}</p>
+            <p>${project.snippet || ""}</p>
         `;
 
 
