@@ -24,30 +24,15 @@
             {
                 "label": "LinkedIn Post",
                 "url":"https://www.linkedin.com/posts/danellefolliet_practera-mihabiotech-weaccelerate-share-7456485337238958080-q7DK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFhTepsBvOtFVtbx5SFoIaUlHDDeqsYybDM"
+            },
+            {
+                "label": "App",
+                "url": "https://buinessfinder.onrender.com/"
             }
         ],
         "demo":
         {
             "html": "<iframe src=\"https://www.linkedin.com/embed/feed/update/urn:li:share:7456485337238958080?collapsed=1\" height=\"500\" width=\"640\" frameborder=\"0\" allowfullscreen=\"\" title=\"Embedded post\"></iframe>"
-        }
-    },
-    {
-        "title": "Waterloo is Not Love Island",
-        "snippet": "72-hour Game Jam made with Godot.",
-        "links": 
-        [
-            {
-                "label": "Itch.io",
-                "url": "https://saarth-rajan.itch.io/waterloo-is-not-love-island-demo"
-            },
-            {
-                "label": "GitHub",
-                "url": "https://github.com/SaarthRajan/UWGameJam25"
-            }
-        ],
-        "demo":
-        {
-            "html": "<iframe frameborder=\"0\" src=\"https://itch.io/embed-upload/15153701?color=e1dacb\" allowfullscreen width=\"640\" height=\"380\"><a href=\"https://saarth-rajan.itch.io/waterloo-is-not-love-island-demo\">Play Waterloo is Not Love Island [DEMO] on itch.io</a></iframe>"
         }
     },
     {
@@ -68,6 +53,29 @@
                 "width":"640",
                 "height":"402"
             }
+        }
+    },
+    {
+        "title": "Biquadris",
+        "snippet": "CS246 Final Project"
+    },
+    {
+        "title": "Waterloo is Not Love Island",
+        "snippet": "72-hour Game Jam made with Godot.",
+        "links": 
+        [
+            {
+                "label": "Itch.io",
+                "url": "https://saarth-rajan.itch.io/waterloo-is-not-love-island-demo"
+            },
+            {
+                "label": "GitHub",
+                "url": "https://github.com/SaarthRajan/UWGameJam25"
+            }
+        ],
+        "demo":
+        {
+            "html": "<iframe frameborder=\"0\" src=\"https://itch.io/embed-upload/15153701?color=e1dacb\" allowfullscreen width=\"640\" height=\"380\"><a href=\"https://saarth-rajan.itch.io/waterloo-is-not-love-island-demo\">Play Waterloo is Not Love Island [DEMO] on itch.io</a></iframe>"
         }
     },
     {
