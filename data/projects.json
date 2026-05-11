@@ -28,7 +28,7 @@
         ],
         "demo":
         {
-            "html": "<iframe src=\"https://www.linkedin.com/embed/feed/update/urn:li:share:7456485337238958080?collapsed=1\" height=\"532\" width=\"504\" frameborder=\"0\" allowfullscreen=\"\" title=\"Embedded post\"></iframe>"
+            "html": "<iframe src=\"https://www.linkedin.com/embed/feed/update/urn:li:share:7456485337238958080?collapsed=1\" height=\"500\" width=\"640\" frameborder=\"0\" allowfullscreen=\"\" title=\"Embedded post\"></iframe>"
         }
     },
     {
