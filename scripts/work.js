@@ -32,6 +32,15 @@ function renderWork(data)
             <span class="work-meta">${job.location}</span>
         `;
 
+        const bullets = document.createElement("ul");
+        bullets.className = "work-bullets";
+        job.bullets.forEach(i => 
+        {
+            const item = document.createElement("li");
+            item.textContent = i;
+            bullets.appendChild(item);
+        })
+        card.appendChild(bullets);
         list.appendChild(card);
     });
     root.appendChild(list);
