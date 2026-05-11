@@ -27,6 +27,9 @@ function renderWork(data)
                 alt=${job.logo.alt}
             />
             <h3>${job.title}</h3>
+            <span class="work-meta">${job.timeline}</span>
+            <span class="work-meta">${job.company}</span>
+            <span class="work-meta">${job.location}</span>
         `;
 
         list.appendChild(card);
