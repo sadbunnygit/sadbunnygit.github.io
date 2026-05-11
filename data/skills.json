@@ -92,6 +92,16 @@
                 [
                     "All programming projects!"
                 ]
+            },
+            {
+                "name": "Microsoft Office",
+                "level": "comfortable",
+                "description": "Basically Word & Excel",
+                "uses": 
+                [
+                    "School",
+                    "Personal things"
+                ]
             }
         ]
     },
