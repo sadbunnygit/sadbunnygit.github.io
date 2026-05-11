@@ -68,6 +68,15 @@
                 [
                     "cs136L", "and some little stuff for testing i used in cs246"
                 ]
+            },
+            {
+                "name": "Makefile",
+                "level": "familiar",
+                "description": "",
+                "uses": 
+                [
+                    "cs136L", "cs246"
+                ]
             }
         ]
     },
