@@ -2,12 +2,18 @@
     
     {
         "title": "sadbunnygit.github.io",
-        "description": "This website!!!!!"
+        "description": "This website! I built this using only HTML,CSS & Javascript code."
     },
     {
-        "title": "WEA Project",
-        "description": "Short description here.",
-        "links": []
+        "title": "Customer Acquisition / Buiness Finder",
+        "description": "A web-based outbound B2B lead generation system that searches and analyzes companies by category and geographic location, visualizes results on an interactive map, and enriches leads using AI-powered scoring and outreach generation.",
+        "links": 
+        [
+            {   
+                "label": "GitHub",
+                "url":"https://github.com/sadbunnygit/BuinessFinder"
+            }
+        ]
     },
     {
         "title": "Waterloo is Not Love Island",
