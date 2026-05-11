@@ -19,7 +19,7 @@ function renderProjects(data)
         card.innerHTML = 
         `
             <h3>${project.title}</h3>
-            <p>${project.snippet || ""}</p>
+            <p>${project.snippet || project.description || ""}</p>
         `;
 
 
@@ -38,7 +38,7 @@ function openProject(project)
     const preview = document.getElementById("projectPreview");
 
     document.getElementById("previewTitle").textContent = project.title;
-    document.getElementById("previewDescription").textContent = project.description || "";
+    document.getElementById("previewDescription").textContent = project.description || project.snippet || "";
 
     const linksDiv = document.getElementById("previewLinks");
     linksDiv.innerHTML = "";
