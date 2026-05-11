@@ -41,7 +41,7 @@ nav ul li:last-child
     background-color: var(--accent-strong);
     color: var(--accent-text);
 }
-#themeToggle 
+.nav-icon 
 {
     width: 20px;
     height: 20px;
