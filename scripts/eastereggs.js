@@ -1,9 +1,9 @@
 
 
-const btn = document.getElementById("soundButton");
-const audio = document.getElementById("myAudio");
+const bellsBtn = document.getElementById("bellsButton");
+const bellsNwhistles = document.getElementById("bellsNwhistles");
 
-btn.addEventListener("click", () => 
+bellsBtn.addEventListener("click", () => 
 {
-    audio.play();
+    bellsNwhistles.play();
 });
