@@ -6,9 +6,9 @@
 
 .work-wrapper
 {
-    display: flex;
     justify-content: center;
-    gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .work-card 
@@ -22,8 +22,6 @@
     border-radius: 12px;
 
     padding: 16px 20px;
-
-    max-width: 600px;
 }
 
 .work-logo 
@@ -33,9 +31,9 @@
     object-fit: contain;
 }
 
-.work-content h3 
+.work-info h3
 {
-    margin: 0;
+    margin-bottom: 2px;
 }
 
 .work-degree 

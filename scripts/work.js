@@ -13,6 +13,7 @@ function renderWork(data)
     console.log("Debug: Running renderWork");
     const root = document.getElementById("work");
     const list = document.createElement("ul");
+    list.className = "work-wrapper";
 
     data.forEach(job => 
     {
@@ -26,10 +27,11 @@ function renderWork(data)
                 src=${job.logo.src}
                 alt=${job.logo.alt}
             />
-            <h3>${job.title}</h3>
-            <span class="work-meta">${job.timeline}</span>
-            <span class="work-meta">${job.company}</span>
-            <span class="work-meta">${job.location}</span>
+            <span class="work-info">
+                <h3>${job.title}</h3>
+                <p class="work-meta">${job.company}</p>
+                <p class="work-meta">${job.timeline}</p>
+            </span>
         `;
 
         const bullets = document.createElement("ul");
