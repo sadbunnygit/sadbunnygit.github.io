@@ -21,6 +21,7 @@
 body.dark 
 {
     --bg: #121212;
+    --headfoot-bg: #432767;
     --text: #eaeaea;
 
     --card: #1e1e1e;
