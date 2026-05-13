@@ -2,7 +2,8 @@
 
 :root 
 {
-    --bg: #faf9ff;          
+    --bg: #faf9ff;       
+    --headfoot-bg: #d8baff;   
     --text: #1a1a1a;
     
     --card: #ffffff;

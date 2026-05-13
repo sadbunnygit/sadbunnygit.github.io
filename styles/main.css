@@ -48,7 +48,7 @@ header
 {
     margin: 0;
     padding: 0.67em 0;
-    background-color: color-mix(in srgb, var(--bg) 64%, rgb(154, 76, 255));
+    background-color: var(--headfoot-bg);
 }
 
 body 
@@ -59,7 +59,18 @@ body
     color: var(--text);
 }
 
+.footer-sticky
+{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--headfoot-bg);
+    text-align: center;
+}
+
 html 
 {
     scroll-behavior: smooth;
 }
+
