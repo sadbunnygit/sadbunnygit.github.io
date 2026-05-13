@@ -30,7 +30,8 @@ function renderWork(data)
             <span class="work-info">
                 <h3>${job.title}</h3>
                 <p class="work-meta">${job.company}</p>
-                <p class="work-meta">${job.timeline}</p>
+                <p class="work-meta">${job.location}</p>
+                <p>${job.timeline}</p>
             </span>
         `;
 
