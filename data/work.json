@@ -1,5 +1,22 @@
 [
     {
+        "title": "Project Team Member, Prototype Development for Miha Biotech Inc.",
+        "company": "Practera, Microsoft Azure & Artificial Intelligence Fundamentals, Waterloo Experience (WE) Accelerate Program ",
+        "logo":
+        {
+            "src": "https://marketmusclescdn.nyc3.digitaloceanspaces.com/wp-content/uploads/sites/656/2022/03/25215323/favicon.png",
+            "alt": "Practera Logo & UW Logo"
+        },
+        "location": "Waterloo, Ontario (Remote)",
+        "timeline": "March 2026 - April 2026",
+        "bullets": 
+        [
+            "Developed a full-stack AI-assisted web application for B2B lead generation by building the frontend (HTML, CSS, JavaScript) and backend API layer using Python (Flask), resulting in a functional and interactive prototype allowing users to search for and find potential businesses ",
+            "Implemented backend control flow logic by coordinating API-handling function calls (Azure Maps, Azure OpenAI, Google Sheets) based on user input, for an easy use of the search, data enrichment, and outreach generation ",
+            "Collaborated on a team to coordinate frontend and backend development by communicating updates through meetings, calls, and a group chat, allowing for efficient teamwork and a working prototype  "
+        ]
+    },
+    {
         "title": "Youth Martial Arts Instructor",
         "company": "Ottawa Academy of Martial Arts",
         "logo":
