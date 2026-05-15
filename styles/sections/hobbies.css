@@ -11,7 +11,7 @@
     gap: 12px;
     margin-top: 10px;
 }
-.skill-card 
+.hobby-card 
 {
     border: 1px solid var(--card-border);
     border-radius: 12px;
@@ -44,14 +44,14 @@
     margin-right: 5px;
 }
 
-.hobby-card.expert { border-left: 8px solid #4caf50; }
-.hobby-tag.expert { background-color: #4caf5044; color: #0c6f10}
-.hobby-card.advanced { border-left: 8px solid #4caf50; }
-.hobby-tag.advanced { background-color: #4caf5044; color: #0c6f10}
-.hobby-card.intermediate { border-left: 8px solid #4edfff;}
-.hobby-tag.intermediate { background-color: #4edfff44; color: #0e9fbf;}
-.hobby-card.beginner { border-left: 8px solid #a1a1a1; }
-.hobby-tag.beginner { background-color: #a1a1a144; color: #a1a1a1;}
+.hobby-card.expert { border-left: 8px solid #d549ea; }
+.hobby-tag.expert { background-color: #d549ea44; color: #9509aa}
+.hobby-card.advanced { border-left: 8px solid #fa946f; }
+.hobby-tag.advanced { background-color: #fa946f44; color: #ba542f}
+.hobby-card.intermediate { border-left: 8px solid #ffcb3c;}
+.hobby-tag.intermediate { background-color: #ffcb3c44; color: #bf8b00;}
+.hobby-card.beginner { border-left: 8px solid #91ff4c; }
+.hobby-tag.beginner { background-color: #91ff4c44; color: #51bf0c;}
 /* for the tag of the main colour -> background add 44 at the end, color substract each value by 64 (16*4) - grey(familiar stays same) */
 
 

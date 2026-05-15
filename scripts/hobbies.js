@@ -17,7 +17,7 @@ function renderHobbies(data)
     data.forEach(hob => 
     {
         const card = document.createElement("div"); // create the card for each skill
-        card.className = `skill-card ${hob.level}`; // different style based on level (colour changes)
+        card.className = `hobby-card ${hob.level}`; // different style based on level (colour changes)
 
         card.innerHTML = // write the text
         `
