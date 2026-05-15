@@ -1,21 +1,14 @@
 [
     {
-        "name": "C++",
-        "level": "comfortable",
-        "description": "OOP",
-        "uses": 
-        [
-            "Academic coursework"
-        ]
+        "name": "Brazilian Jiujitsu",
+        "level": "intermediate"
     },
     {
-        "name": "HTML/CSS/JS",
-        "level": "comfortable",
-        "description": "Web development for this portfolio site.",
-        "uses": 
-        [
-            "This portfolio website",
-            "Frontend for WEA project"
-        ]
+        "name": "Dungeons & Dragons",
+        "level": "advanced"
+    },
+    {
+        "name": "Rubik Cubes",
+        "level": "intermediate"
     }
 ]
