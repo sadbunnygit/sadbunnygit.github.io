@@ -57,7 +57,11 @@
     },
     {
         "title": "Biquadris",
-        "snippet": "CS246 Final Project"
+        "snippet": "CS246 Final Project",
+        "demo":
+        {
+            "html": "<img src=../assets/images/biquadss.png>"
+        }
     },
     {
         "title": "Waterloo is Not Love Island",
