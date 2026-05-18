@@ -1,10 +1,10 @@
 
-#skills 
+#hobbies
 {
     padding: 40px 20px;
 }
 
-.skill-grid 
+.hobby-grid 
 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -19,15 +19,15 @@
     background: var(--card);
     transition: transform 0.15s ease;
 }
-.skill-card:hover,.skill-card.active 
+.hobby-card:hover,.hobby-card.active 
 {
     transform: translateY(-2px);
 }
-.skill-card.active 
+.hobby-card.active 
 {
     filter: brightness(0.95);
 }
-.skill-card h3
+.hobby-card h3
 {
     padding: 0;
     margin: 5px;
