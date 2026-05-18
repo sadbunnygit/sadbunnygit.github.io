@@ -60,7 +60,7 @@
         "snippet": "CS246 Final Project",
         "demo":
         {
-            "html": "<img src=../assets/images/biquadss.png>"
+            "html": "<img src=\"../assets/images/biquadss.png\" alt=\"A screenshot of Biquadris gameplay\" width=\"787\" height=\"420\">"
         }
     },
     {
