@@ -25,12 +25,12 @@ function renderSkills(data)
         section.skills.forEach(skill => 
         {
             const card = document.createElement("div"); // create the card for each skill
-            card.className = `skill-card ${skill.level}`; // different style based on level (colour changes)
+            card.className = `card ${skill.level}`; // different style based on level (colour changes)
 
             card.innerHTML = // write the text
             `
                 <h3>${skill.name}</h3>
-                <span class="skill-tag ${skill.level}">${skill.level}</span>
+                <span class="tag ${skill.level}">${skill.level}</span>
                 <p>${skill.description || ""}</p>
             `;
 

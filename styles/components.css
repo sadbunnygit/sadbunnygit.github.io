@@ -98,3 +98,13 @@ summary:hover
     padding: 0;
     margin: 5px;
 }
+.tag 
+{
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    background: var(--tag);
+    margin-right: 5px;
+}
