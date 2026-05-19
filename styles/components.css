@@ -75,3 +75,26 @@ summary:hover
     opacity: 1;
     visibility: visible;
 }
+
+
+.card 
+{
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 12px;
+    background: var(--card);
+    transition: transform 0.15s ease;
+}
+.card:hover,.card.active 
+{
+    transform: translateY(-2px);
+}
+.card.active 
+{
+    filter: brightness(0.95);
+}
+.card h3
+{
+    padding: 0;
+    margin: 5px;
+}

@@ -11,38 +11,6 @@
     gap: 12px;
     margin-top: 10px;
 }
-.skill-card 
-{
-    border: 1px solid var(--card-border);
-    border-radius: 12px;
-    padding: 12px;
-    background: var(--card);
-    transition: transform 0.15s ease;
-}
-.skill-card:hover,.skill-card.active 
-{
-    transform: translateY(-2px);
-}
-.skill-card.active 
-{
-    filter: brightness(0.95);
-}
-.skill-card h3
-{
-    padding: 0;
-    margin: 5px;
-}
-
-.skill-tag 
-{
-    display: inline-block;
-    margin-top: 6px;
-    font-size: 12px;
-    padding: 3px 8px;
-    border-radius: 999px;
-    background: var(--tag);
-    margin-right: 5px;
-}
 
 .skill-card.proficient { border-left: 8px solid #4caf50; }
 .skill-tag.proficient { background-color: #4caf5044; color: #0c6f10}
