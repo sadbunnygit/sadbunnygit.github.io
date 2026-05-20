@@ -1,16 +1,11 @@
 
-#work 
-{
-    padding: 40px 20px;
-}
-
 .work-wrapper
 {
     margin: 0;
     padding: 0;
 }
 
-.work-card 
+#work .card 
 {
     display: flex;
     align-items: center;
@@ -31,20 +26,13 @@
     height: 128px;
     object-fit: contain;
 }
-
 .work-info h3
 {
     margin-bottom: 2px;
 }
-
 .work-meta
 {
     margin: 0;
     font-size: 0.9rem;
     opacity: 0.7;
-}
-
-.work-card:hover 
-{
-    transform: translateY(-2px);
 }
