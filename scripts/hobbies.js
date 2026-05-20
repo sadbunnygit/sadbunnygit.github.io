@@ -13,7 +13,7 @@ function renderHobbies(data)
     console.log("Debug: Running renderHobbies");
     const root = document.getElementById("hobbies");
     const grid = document.createElement("div"); // make it a grid, so nice alignment
-    grid.className = "skill-grid";
+    grid.className = "card-grid";
     data.forEach(hob => 
     {
         const card = document.createElement("div"); // create the card for each skill

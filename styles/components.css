@@ -98,6 +98,13 @@ summary:hover
     padding: 0;
     margin: 5px;
 }
+.card-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 12px;
+    margin-top: 10px;
+}
 .tag 
 {
     display: inline-block;
