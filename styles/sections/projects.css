@@ -121,3 +121,14 @@
     background: var(--accent-soft);
     text-decoration: underline;
 }
+
+
+img
+{
+    height: 20px;
+    object-fit: contain;
+}
+button
+{
+    max-width: 30vh;
+}
