@@ -22,7 +22,12 @@
         "links": 
         [
             {   
-                "label": "GitHub",
+                
+                "label":
+                {
+                    "text":"GitHub",
+                    "img":"./assets/icons/GitHub_Logos/SVG/GitHub_Lockup_White.svg"
+                },
                 "url":"https://github.com/sadbunnygit/BuinessFinder"
             },
             {
@@ -77,7 +82,12 @@
                 "url": "https://saarth-rajan.itch.io/waterloo-is-not-love-island-demo"
             },
             {
-                "label": "GitHub",
+                
+                "label":
+                {
+                    "text":"GitHub",
+                    "img":"./assets/icons/GitHub_Logos/SVG/GitHub_Lockup_White.svg"
+                },
                 "url": "https://github.com/SaarthRajan/UWGameJam25"
             }
         ],

@@ -56,9 +56,13 @@ function openProject(project)
                 img.alt = link.label.text;
                 a.appendChild(img);
             }
-            else 
+            else if (link.label.text)
             {
                 a.textContent = link.label.text;
+            }
+            else if (link.label)
+            {
+                a.textContent = link.label;
             }
             a.href = link.url;
             a.target = "_blank";
