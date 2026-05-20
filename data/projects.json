@@ -6,7 +6,11 @@
         "links":
         [
             {
-                "label":"GitHub",
+                "label":
+                {
+                    "text":"GitHub",
+                    "img":"./assets/icons/GitHub_Logos/SVG/GitHub_Lockup_White.svg"
+                },
                 "url":"https://github.com/sadbunnygit/sadbunnygit.github.io"
             }
         ]

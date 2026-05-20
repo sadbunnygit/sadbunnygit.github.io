@@ -48,9 +48,20 @@ function openProject(project)
         project.links.forEach(link => 
         {
             const a = document.createElement("a");
+            a.className = "button"
+            if (link.label.img)
+            {
+                var img = document.createElement('img');
+                img.src = link.label.img;
+                img.alt = link.label.text;
+                a.appendChild(img);
+            }
+            else 
+            {
+                a.textContent = link.label.text;
+            }
             a.href = link.url;
             a.target = "_blank";
-            a.textContent = link.label;
             linksDiv.appendChild(a);
         });
     }

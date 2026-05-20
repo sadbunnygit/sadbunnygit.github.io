@@ -102,6 +102,8 @@
 #previewLinks a
 {
     display: inline-block;
+    align-items: center;        /* Center vertically */
+    justify-content: center;    /* Center horizontally */
 
     margin: 8px 8px 0 0;
     padding: 6px 12px;
@@ -120,5 +122,9 @@
 {
     background: var(--accent-soft);
     text-decoration: underline;
+}
+#previewLinks .button img
+{
+    height: 16px;
 }
 
