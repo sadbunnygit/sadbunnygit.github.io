@@ -46,8 +46,7 @@
 
 header
 {
-    margin: 0;
-    padding: 0.67em 0;
+    padding: 2vh;
     background-color: var(--headfoot-bg);
 }
 
@@ -77,4 +76,9 @@ html
 section
 {
     padding: 40px 20px;
+}
+
+.endofpage
+{
+    background-color: var(--headfoot-bg);
 }
