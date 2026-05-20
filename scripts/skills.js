@@ -20,7 +20,7 @@ function renderSkills(data)
         title.textContent = section.category;
 
         const grid = document.createElement("div"); // make it a grid, so nice alignment
-        grid.className = "skill-grid";
+        grid.className = "card-grid";
 
         section.skills.forEach(skill => 
         {

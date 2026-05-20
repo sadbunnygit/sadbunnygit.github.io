@@ -1,12 +1,4 @@
 
-.skill-grid 
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 12px;
-    margin-top: 10px;
-}
-
 .skill-grid .card.proficient { border-left: 8px solid #4caf50; }
 .skill-grid .tag.proficient { background-color: #4caf5044; color: #0c6f10}
 .skill-grid .card.comfortable { border-left: 8px solid #4edfff;}
