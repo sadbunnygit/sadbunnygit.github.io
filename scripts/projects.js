@@ -14,7 +14,7 @@ function renderProjects(data)
     data.forEach(project => 
     {
         const card = document.createElement("div");
-        card.className = "project-card";
+        card.className = "card";
 
         card.innerHTML = 
         `

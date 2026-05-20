@@ -1,18 +1,14 @@
-#projects 
-{
-    padding: 40px 20px;
-}
 
 .projects-wrapper 
 {
-    margin: 50px;
+    margin: 25px;
     display: flex;
     align-items: center;
     gap: 12px;
 }
-
 .projects-container 
 {
+    padding: 25px 0;
     display: flex;
     width: 100%;
     overflow-x: auto;  
@@ -23,19 +19,16 @@
 {
     display: none;
 }
-.project-card 
+#projects .card 
 {
     margin: 0 10px;
     flex: 0 0 calc((100% / 3) - 60px); 
-    background: var(--card);
-    border-radius: 12px;
     padding: 20px;
-    border: 1px solid var(--card-border);
     cursor: pointer;
 }
-.project-card:hover 
+#projects .card:hover 
 {
-    border: 1px solid var(--accent);
+    border: 2px solid var(--accent);
 }
 
 
