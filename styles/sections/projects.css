@@ -122,13 +122,3 @@
     text-decoration: underline;
 }
 
-
-#projects img
-{
-    height: 20px;
-    object-fit: contain;
-}
-#projects button
-{
-    max-width: 30vh;
-}
