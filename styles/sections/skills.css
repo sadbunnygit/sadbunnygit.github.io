@@ -1,10 +1,10 @@
 
-.skill-grid .card.proficient { border-left: 8px solid #4caf50; }
-.skill-grid .tag.proficient { background-color: #4caf5044; color: #0c6f10}
-.skill-grid .card.comfortable { border-left: 8px solid #4edfff;}
-.skill-grid .tag.comfortable { background-color: #4edfff44; color: #0e9fbf;}
-.skill-grid .card.familiar { border-left: 8px solid #a1a1a1; }
-.skill-grid .tag.familiar { background-color: #a1a1a144; color: #a1a1a1;}
+#skills .card.proficient { border-left: 8px solid #4caf50; }
+#skills .tag.proficient { background-color: #4caf5044; color: #0c6f10}
+#skills .card.comfortable { border-left: 8px solid #4edfff;}
+#skills .tag.comfortable { background-color: #4edfff44; color: #0e9fbf;}
+#skills .card.familiar { border-left: 8px solid #a1a1a1; }
+#skills .tag.familiar { background-color: #a1a1a144; color: #a1a1a1;}
 /* for the tag of the main colour -> background add 44 at the end, color substract each value by 64 (16*4) - grey(familiar stays same) */
 
 

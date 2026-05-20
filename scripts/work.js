@@ -18,7 +18,7 @@ function renderWork(data)
     data.forEach(job => 
     {
         const card = document.createElement("li");
-        card.className = "work-card";
+        card.className = "card";
 
         card.innerHTML = 
         `

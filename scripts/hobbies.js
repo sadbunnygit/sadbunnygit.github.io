@@ -17,12 +17,12 @@ function renderHobbies(data)
     data.forEach(hob => 
     {
         const card = document.createElement("div"); // create the card for each skill
-        card.className = `hobby-card ${hob.level}`; // different style based on level (colour changes)
+        card.className = `card ${hob.level}`; // different style based on level (colour changes)
 
         card.innerHTML = // write the text
         `
             <h3>${hob.name}</h3>
-            <span class="hobby-tag ${hob.level}">${hob.level}</span>
+            <span class="tag ${hob.level}">${hob.level}</span>
         `;
 
         grid.appendChild(card);
