@@ -28,11 +28,11 @@
         </audio>
 
         <!-- The button -->
-        <button id="bellsButton">Bells & Whistles</button>
+        <button class="button" id="bellsButton">Bells & Whistles</button>
 
         <div class="wipBanner">
             Work in Progress
-            <button onclick="this.parentElement.style.display='none'">✕</button>
+            <button class="button" onclick="this.parentElement.style.display='none'">✕</button>
         </div>
 
         <header>
@@ -93,13 +93,13 @@
         <section id="projects">
             <h2>Projects</h2>
             <div class="projects-wrapper">
-                <button onclick="scrollProjects(-1)" class="scroll-btn">&lt;</button>
+                <button class="button" onclick="scrollProjects(-1)" class="scroll-btn">&lt;</button>
                 <div class="projects-container" id="projectsContainer"></div>
-                <button onclick="scrollProjects(1)" class="scroll-btn">&gt;</button>
+                <button class="button" onclick="scrollProjects(1)" class="scroll-btn">&gt;</button>
             </div>
             <div id="projectPreview" class="preview">
                 <div class="preview-content">
-                    <button class="preview-close" onclick="closeProject()">✕</button>
+                    <button class="button preview-close" onclick="closeProject()">✕</button>
 
                     <h2 id="previewTitle"></h2>
                     <p id="previewDescription"></p>
@@ -110,12 +110,12 @@
             </div>
             <span id="extraLinks">
                 Projects featured on: 
-                <button href="https://github.com/sadbunnygit" target="_blank">
+                <a class="button" href="https://github.com/sadbunnygit" target="_blank">
                     <img class="" src="https://github.githubassets.com/favicons/favicon-dark.svg">
-                </button> 
-                <button href="https://sadbunnyitch.itch.io/" target="_blank">
+                </a> 
+                <a class="button" href="https://sadbunnyitch.itch.io/" target="_blank">
                     <img class="" src="https://static.itch.io/images/itchio-white.svg">
-                </button> 
+                </a> 
             </span>
         </section>
 
@@ -175,9 +175,9 @@
 
         <section id="contact">
             <h2>Contact Me!</h2>
-            <button href="https://www.linkedin.com/in/danellefolliet/" target="_blank">
+            <a class="button" href="https://www.linkedin.com/in/danellefolliet/" target="_blank">
                 <img src="./assets/icons/linkedin-logo/LI-Logo.png">
-            </button> 
+            </a> 
         </section>
 
         <footer>

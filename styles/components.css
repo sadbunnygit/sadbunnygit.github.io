@@ -1,6 +1,6 @@
 
 
-input,button
+input,.button
 {
     font-family:  var(--main-font);
     padding:10px;
@@ -9,7 +9,7 @@ input,button
     border-color: var(--accent-strong);
     max-width: 30vh;
 }
-button
+.button
 {
     background: var(--accent);
     color:var(--accent-text);
@@ -17,16 +17,16 @@ button
     cursor:pointer;
     transition: background 0.2s ease, transform 0.2s ease;
 }
-button:hover
+.button:hover
 {
     background-color: var(--accent-soft); /*sets the background of the colour (area is the padding)*/
     transform: scale(1.05);
 }
-button:active 
+.button:active 
 {
     transform: scale(0.95);
 }
-button img
+.button img
 {
     height: 20px;
     object-fit: contain;
