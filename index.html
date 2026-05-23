@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="stylesheet" href="./styles/themes.css">
         <link rel="stylesheet" href="./styles/components.css">
-        <link rel="stylesheet" href="./styles/specialClass.css">
             <!-- css styling by section -->
             <link rel="stylesheet" href="./styles/sections/about.css">
             <link rel="stylesheet" href="./styles/sections/nav.css">
@@ -203,9 +202,13 @@
                     <div>
                         <div>
                             <label>Subject</label> 
-                            <select>
-                                <option>Just Saying Hi</option>
-                            </select>
+                            <div class="autocomplete">
+                                <input id="category" type="text" placeholder="subject" autocomplete="off" required>
+                                <div id="dropdown" class="dropdown hidden">
+                                    <div>subject 1</div>
+                                    <div>subjec 2</div>                                        
+                                </div>
+                            </div>
                         </div> 
                         <div>
                             <label>Message</label> 
@@ -232,6 +235,7 @@
         <script src="./scripts/projects.js" defer></script>
         <script src="./scripts/work.js" defer></script>
         <script src="./scripts/hobbies.js" defer></script>
+        <script src="./scripts/dropdown.js" defer></script>
 
     </body>
 </html>

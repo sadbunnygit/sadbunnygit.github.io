@@ -124,3 +124,32 @@ summary:hover
     margin-right: 5px;
 }
 
+
+.autocomplete 
+{
+    position: relative;
+    display: inline-block;
+}
+.dropdown 
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    border: 1px solid #ccc;
+    background: var(--bg);
+    max-height: 200px;
+    overflow-y: auto;
+
+    z-index: 1000;
+}
+.dropdown div 
+{
+    padding: 8px;
+    cursor: pointer;
+}
+.dropdown div:hover 
+{
+    background-color: var(--accent);
+}
