@@ -182,13 +182,29 @@
             <a class="button" href="https://www.linkedin.com/in/danellefolliet/" target="_blank">
                 <img src="./assets/icons/linkedin-logo/LI-Logo.png">
             </a> 
-            <details>
-                <summary class="button"> Send me a message! </summary>
-                <div id="message-sender">
-                    <input type="text" id="message-input" placeholder="Type a message...">
-                    <button class="button" id="send-btn">Send</button>
+            <form>
+                <div>
+                    <label>Your Name</label> 
+                    <input placeholder="sadbunny">
+                </div> 
+                <div>
+                    <label>Email Address</label>
+                    <input placeholder="hi@example.com">
                 </div>
-            </details>
+                <div>
+                    <div>
+                        <label>Subject</label> 
+                        <select>
+                            <option>Just Saying Hi</option>
+                        </select>
+                    </div> 
+                    <div>
+                        <label>Message</label> 
+                        <textarea placeholder="hello"></textarea>
+                    </div> 
+                </div>
+                <button type="submit" class="button">Send Message</button>
+            </form>
         </section>
 
 
