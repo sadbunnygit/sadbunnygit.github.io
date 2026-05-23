@@ -4,8 +4,14 @@
 {
     margin: 0 20vw;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 18vw 30vw;
     gap: 20px;
     justify-content: center;
     align-items: start;
+}
+
+.user-info
+{
+    display: flex;
+    gap: 10px;
 }
