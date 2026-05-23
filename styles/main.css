@@ -83,3 +83,18 @@ footer
     padding: 40px 20px;
     background-color: var(--headfoot-bg);
 }
+
+.hidden 
+{
+    display: none;
+}
+
+.helpCursor 
+{
+    cursor: help;
+}
+
+.inline-hori
+{
+    display: inline-flex;
+}
