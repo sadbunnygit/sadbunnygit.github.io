@@ -2,7 +2,10 @@
 
 .contact-wrapper
 {
+    margin: 0 20vw;
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
+    justify-content: center;
+    align-items: start;
 }

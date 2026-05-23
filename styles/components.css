@@ -109,7 +109,7 @@ summary:hover
 .card-grid 
 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* creates as many columns as fit, minimum 240px each */
     gap: 12px;
     margin-top: 10px;
 }
