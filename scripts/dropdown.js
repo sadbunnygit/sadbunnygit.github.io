@@ -1,6 +1,6 @@
 
 const categoryInput = document.getElementById("category");
-categories = ["1","2","1,2,3,4,5,6,7,10,14,41,4","2","1,2,3,4,5,6,7,10,14,41,4","2","1,2,3,4,5,6,7,10,14,41,4"]
+categories = ["Just saying hi!", "Employment Opportunity"]
 function renderDropdown(filter = "") 
 {
     console.log("dropdown rendering");
