@@ -1,14 +1,5 @@
 
-
-const autocompletes = new Map();
-
-document.querySelectorAll('.autocomplete').forEach (a => 
-{
-    a.style.backgroundColor = 'yellow';
-    autocompletes.set(a.id, { html: a });
-    console.log(autocompletes.get(a));
-    console.log(autocompletes);
-});
+autocompletes = new Map();
 
 // get the data 
 fetch('../data/autocomplete.json')
@@ -17,21 +8,22 @@ fetch('../data/autocomplete.json')
 
 function loadOptions(data = "")
 {
-    data.forEach(id => 
+    data.forEach(a => 
     {
         console.log("load options for: ");
-        autocompletes.set(id, {options: "hi"});
-        console.log(autocompletes);
+        autocompletes.set(a.id, a.options);
+        renderDropdown(a);
     });
+    console.log(autocompletes);
 }
 
 
 document.addEventListener("click", (e) => // close when clicedk outside
 {
-    const wrapper = document.querySelectorAll(".autocomplete");
+    const ac = document.querySelectorAll(".autocomplete");
 
     // if click is outside the autocomplete component
-    autocompletes.forEach (a => 
+    ac.forEach (a => 
     {
         if (!a.contains(e.target)) 
         {
@@ -44,19 +36,13 @@ const parent = document.getElementById('myParent');
 //const firstChild = parent.querySelector('.my-child-class');
 
 
-
-categories = ["Just saying hi!", "Employment Opportunity"]
-function renderDropdown(filter = "") 
+function renderDropdown(ac) 
 {
     console.log("dropdown rendering");
+    const dropdown = document.getElementById(ac.id).querySelector(".dropdown");
     dropdown.innerHTML = "";
 
-    const filtered = categories.filter
-    (c =>
-        c.toLowerCase().includes(filter.toLowerCase())
-    );
-
-    filtered.forEach
+    ac.options.forEach
     (c => {
         const div = document.createElement("div");
         div.textContent = c;
@@ -70,8 +56,9 @@ function renderDropdown(filter = "")
         dropdown.appendChild(div);
     });
 
-    dropdown.classList.toggle("hidden", filtered.length === 0);
+    dropdown.classList.toggle("hidden");
 }
+/*
 categoryInput.addEventListener("input", () =>  // filters list as user types
 {
     console.log("typed in category");
@@ -82,4 +69,4 @@ categoryInput.addEventListener("focus", () => // open dropdown when they click b
     console.log("clicked in category");
     renderDropdown(categoryInput.value);
     dropdown.classList.remove("hidden");
-});
+});*/
