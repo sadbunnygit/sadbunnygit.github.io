@@ -13,15 +13,17 @@ function loadOptions(data = "")
         console.log("load options for: ");
         autocompletes.set(a.id, a.options);
         renderDropdown(a);
-        categoryInput.addEventListener("input", () =>  // filters list as user types
+        const input = document.getElementById(a.id).querySelector("input");
+        const dropdown = document.getElementById(a.id).querySelector(".dropdown");
+        input.addEventListener("input", () =>  // filters list as user types
         {
-            console.log("typed in category");
-            renderDropdown(categoryInput.value);
+            console.log("typed in category: ", input.value);
+            renderDropdown(a,input.value);
         });
-        categoryInput.addEventListener("focus", () => // open dropdown when they click box
+        input.addEventListener("focus", () => // open dropdown when they click box
         {
             console.log("clicked in category");
-            renderDropdown(categoryInput.value);
+            renderDropdown(a,input.value);
             dropdown.classList.remove("hidden");
         });
     });
@@ -48,6 +50,7 @@ function renderDropdown(ac, filter = "")
 {
     console.log("dropdown rendering");
     const dropdown = document.getElementById(ac.id).querySelector(".dropdown");
+    const input = document.getElementById(ac.id).querySelector("input");
     dropdown.innerHTML = "";
 
 
