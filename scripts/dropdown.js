@@ -1,4 +1,20 @@
 
+
+
+
+const autocompletes = document.querySelectorAll('.autocomplete');
+
+autocompletes.forEach (a => 
+{
+    a.style.backgroundColor = 'yellow';
+});
+
+const parent = document.getElementById('myParent');
+//const firstChild = parent.querySelector('.my-child-class');
+categories = ["Just saying hi!", "Employment Opportunity"]
+
+
+
 const categoryInput = document.getElementById("category");
 categories = ["Just saying hi!", "Employment Opportunity"]
 function renderDropdown(filter = "") 
