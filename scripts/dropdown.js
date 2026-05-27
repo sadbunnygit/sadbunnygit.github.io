@@ -13,6 +13,17 @@ function loadOptions(data = "")
         console.log("load options for: ");
         autocompletes.set(a.id, a.options);
         renderDropdown(a);
+        categoryInput.addEventListener("input", () =>  // filters list as user types
+        {
+            console.log("typed in category");
+            renderDropdown(categoryInput.value);
+        });
+        categoryInput.addEventListener("focus", () => // open dropdown when they click box
+        {
+            console.log("clicked in category");
+            renderDropdown(categoryInput.value);
+            dropdown.classList.remove("hidden");
+        });
     });
     console.log(autocompletes);
 }
@@ -32,18 +43,21 @@ document.addEventListener("click", (e) => // close when clicedk outside
     });
 });
 
-const parent = document.getElementById('myParent');
-//const firstChild = parent.querySelector('.my-child-class');
 
-
-function renderDropdown(ac) 
+function renderDropdown(ac, filter = "") 
 {
     console.log("dropdown rendering");
     const dropdown = document.getElementById(ac.id).querySelector(".dropdown");
     dropdown.innerHTML = "";
 
-    ac.options.forEach
-    (c => {
+
+    const filtered = ac.options.filter 
+    (c =>
+        c.toLowerCase().includes(filter.toLowerCase())
+    );
+
+    filtered.forEach (c => 
+    {
         const div = document.createElement("div");
         div.textContent = c;
 
@@ -58,15 +72,4 @@ function renderDropdown(ac)
 
     dropdown.classList.toggle("hidden");
 }
-/*
-categoryInput.addEventListener("input", () =>  // filters list as user types
-{
-    console.log("typed in category");
-    renderDropdown(categoryInput.value);
-});
-categoryInput.addEventListener("focus", () => // open dropdown when they click box
-{
-    console.log("clicked in category");
-    renderDropdown(categoryInput.value);
-    dropdown.classList.remove("hidden");
-});*/
+
