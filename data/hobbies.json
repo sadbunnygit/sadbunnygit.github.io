@@ -1,26 +1,41 @@
 [
     {
         "name": "Rubik Cubes",
-        "level": "intermediate"
+        "level": "intermediate",
+        "description": "3x3 PB: 36.13 seconds"
     },
     {
         "name": "Brazilian Jiujitsu",
-        "level": "intermediate"
+        "level": "intermediate",
+        "description": "Kids Instructor & Blue Belt"
     },
     {
         "name": "Dungeons & Dragons",
-        "level": "advanced"
+        "level": "advanced",
+        "description": "2crew"
     },
     {
-        "name": "Video games (THIS IS WAY TO BROAD I NEW TO DO IT DIFFERNT",
-        "level": "intermediate"
+        "name": "Video games",
+        "level": "intermediate",
+        "description": "A very broad category as there are many many different video games and different types. So this section is likely to change. Most favourite game is Minecraft. It, KOTOR, and BTD6 are the games I've played the most recently."
     },
     {
         "name": "Skateboarding",
-        "level": "beginner"
+        "level": "beginner",
+        "description": "The only trick I can do is shuv-it on one side without moving. But I can do tictac turns, and have gone up and down ramps."
     },
     {
-        "name": "being cool",
-        "level": "expert"
+        "name": "Rock Climbing",
+        "level": "beginner",
+        "description": "V2/V3 level"
+    },
+    {
+        "name": "LEGO",
+        "description": ""
+    },
+    {
+        "name": "being me :)",
+        "level": "expert",
+        "description": "im super cool 😎"
     }
 ]

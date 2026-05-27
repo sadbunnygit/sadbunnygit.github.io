@@ -23,6 +23,7 @@ function renderHobbies(data)
         `
             <h3>${hob.name}</h3>
             <span class="tag ${hob.level}">${hob.level}</span>
+            <p>${hob.description || ""}</p>
         `;
 
         grid.appendChild(card);
