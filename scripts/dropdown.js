@@ -37,7 +37,6 @@ document.addEventListener("click", (e) => // close when clicedk outside
 
 const parent = document.getElementById('myParent');
 //const firstChild = parent.querySelector('.my-child-class');
-categories = ["Just saying hi!", "Employment Opportunity"]
 
 
 
