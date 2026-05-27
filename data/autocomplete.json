@@ -1,7 +1,10 @@
-{
-    "emailSubject":
-    [
-        "Just saying hi!", 
-        "Employment Opportunity"
-    ]
-}
+[
+    {
+        "id": "emailSubject",
+        "options":
+        [
+            "Just saying hi!", 
+            "Employment Opportunity"
+        ]
+    }
+]

@@ -1,26 +1,13 @@
 
 
-class Autocomplete 
-{
-    constructor(html, id, options) 
-    {
-        this.html = html;
-        this.id = id;
-        this.options = options;
-    }
-}
-
-// - not in a function happens on load -
-
-
 const autocompletes = new Map();
+
 document.querySelectorAll('.autocomplete').forEach (a => 
 {
     a.style.backgroundColor = 'yellow';
-    console.log(a);
-    a = new Autocomplete(a, a.id);
-    console.log(a);
-    autocompletes.push(a);
+    autocompletes.set(a.id, { html: a });
+    console.log(autocompletes.get(a));
+    console.log(autocompletes);
 });
 
 // get the data 
@@ -28,14 +15,13 @@ fetch('../data/autocomplete.json')
     .then(r => r.json())
     .then(loadOptions);
 
-function loadOptions(data)
+function loadOptions(data = "")
 {
-    autocompletes.forEach (a => 
+    data.forEach(id => 
     {
-        a.style.backgroundColor = 'yellow';
-        console.log(a);
-        a = new Autocomplete(a, a.id);
-        console.log(a);
+        console.log("load options for: ");
+        autocompletes.set(id, {options: "hi"});
+        console.log(autocompletes);
     });
 }
 
