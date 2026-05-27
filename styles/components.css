@@ -6,7 +6,6 @@ input,.button,textarea
     padding:10px;
     border-radius: 8px;
     border-color: var(--accent-strong);
-    max-width: 30vh;
     border-style: inset;
     border-width: 2px;
     background: var(--tag);

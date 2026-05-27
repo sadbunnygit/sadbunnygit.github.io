@@ -39,13 +39,21 @@ form.card
 
 
 
-#contact textarea 
+.email-content div
+{
+    width: 100%;
+}
+.email-content textarea 
 {
     min-height: 100px;
-    width: 90%;
+    width: 100%;
     resize: vertical;
 }
-form .button 
+.email-content input
+{
+    width: 100%;
+}
+form .button
 {
     padding: 16px 24px;
     font-size: 15px;
