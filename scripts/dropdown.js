@@ -2,23 +2,42 @@
 
 class Autocomplete 
 {
-    constructor(html, id, categories) 
+    constructor(html, id, options) 
     {
         this.html = html;
         this.id = id;
-        this.categories = categories;
+        this.options = options;
     }
 }
 
-const autocompletes = document.querySelectorAll('.autocomplete');
-const autocompletes2 = [];
-autocompletes.forEach (a => 
+// - not in a function happens on load -
+
+
+const autocompletes = new Map();
+document.querySelectorAll('.autocomplete').forEach (a => 
 {
     a.style.backgroundColor = 'yellow';
     console.log(a);
     a = new Autocomplete(a, a.id);
     console.log(a);
+    autocompletes.push(a);
 });
+
+// get the data 
+fetch('../data/autocomplete.json')
+    .then(r => r.json())
+    .then(loadOptions);
+
+function loadOptions(data)
+{
+    autocompletes.forEach (a => 
+    {
+        a.style.backgroundColor = 'yellow';
+        console.log(a);
+        a = new Autocomplete(a, a.id);
+        console.log(a);
+    });
+}
 
 
 document.addEventListener("click", (e) => // close when clicedk outside
