@@ -66,7 +66,7 @@ function renderDropdown(ac, filter = "")
 
         div.onclick = () => 
         {
-            categoryInput.value = c;
+            input.value = c;
             dropdown.classList.add("hidden");
         };
 
