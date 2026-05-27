@@ -1,12 +1,16 @@
 
 
-input,.button
+input,.button,textarea
 {
     font-family:  var(--main-font);
     padding:10px;
     border-radius: 8px;
     border-color: var(--accent-strong);
     max-width: 30vh;
+    border-style: inset;
+    border-width: 2px;
+    background: var(--tag);
+    color: var(--text);
 }
 .button
 {
@@ -33,6 +37,16 @@ input,.button
 {
     height: 20px;
     filter: brightness(0) invert(1); /*makes all white*/
+}
+input:focus, textarea:focus 
+{
+    outline: none;
+    border-color: var(--accent);
+    background: var(--card);
+}
+input::placeholder, textarea::placeholder 
+{
+    color: var(--accent-soft);
 }
 
 
