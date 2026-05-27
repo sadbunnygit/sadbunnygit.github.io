@@ -1,12 +1,38 @@
 
 
-
+class Autocomplete 
+{
+    constructor(html, id, categories) 
+    {
+        this.html = html;
+        this.id = id;
+        this.categories = categories;
+    }
+}
 
 const autocompletes = document.querySelectorAll('.autocomplete');
-
+const autocompletes2 = [];
 autocompletes.forEach (a => 
 {
     a.style.backgroundColor = 'yellow';
+    console.log(a);
+    a = new Autocomplete(a, a.id);
+    console.log(a);
+});
+
+
+document.addEventListener("click", (e) => // close when clicedk outside
+{
+    const wrapper = document.querySelectorAll(".autocomplete");
+
+    // if click is outside the autocomplete component
+    autocompletes.forEach (a => 
+    {
+        if (!a.contains(e.target)) 
+        {
+            a.querySelector('.dropdown').classList.add("hidden");
+        }
+    });
 });
 
 const parent = document.getElementById('myParent');
@@ -15,7 +41,6 @@ categories = ["Just saying hi!", "Employment Opportunity"]
 
 
 
-const categoryInput = document.getElementById("category");
 categories = ["Just saying hi!", "Employment Opportunity"]
 function renderDropdown(filter = "") 
 {
@@ -53,14 +78,4 @@ categoryInput.addEventListener("focus", () => // open dropdown when they click b
     console.log("clicked in category");
     renderDropdown(categoryInput.value);
     dropdown.classList.remove("hidden");
-});
-document.addEventListener("click", (e) => // close when clicedk outside
-{
-    const wrapper = document.querySelector(".autocomplete");
-
-    // if click is outside the autocomplete component
-    if (!wrapper.contains(e.target)) 
-    {
-        dropdown.classList.add("hidden");
-    }
 });
