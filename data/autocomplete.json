@@ -11,8 +11,8 @@
         "id": "test",
         "options":
         [
-            "you shouldnt see me", 
-            "or me"
+            "you should see me", 
+            "and me"
         ]
     }
 ]
