@@ -99,7 +99,7 @@ summary:hover
 }
 .card.active 
 {
-    filter: brightness(0.95);
+    filter: invert(0.05) brightness(0.9)
 }
 .card h3
 {
