@@ -192,27 +192,28 @@
                     <div class="user-info">
                         <div>
                             <label>Your Name</label> 
-                            <input placeholder="sadbunny">
+                            <input placeholder="sadbunny" name="name">
                         </div> 
                         <div>
                             <label>Email Address</label>
-                            <input placeholder="hi@example.com" type="email" name="email">
+                            <input placeholder="hi@example.com" type="email" name="email" required>
                         </div>
                     </div> 
                     <div class="email-content">
                         <div>
                             <label>Subject</label> 
                             <div id="emailSubject" class="autocomplete">
-                                <input type="text" placeholder="subject" autocomplete="off" required>
+                                <input type="text" placeholder="subject" autocomplete="off">
                                 <div class="dropdown hidden"></div>
                             </div>
                         </div> 
                         <div>
                             <label>Message</label> 
-                            <textarea placeholder="hello" name="message"></textarea>
+                            <textarea placeholder="hello" name="message" required></textarea>
                         </div> 
                     </div>
-                    <button type="submit" class="button">Send Message</button>
+                    <input type="hidden" name="_next" value="https://sadbunnygit.github.io" /> <!-- -- Source - https://stackoverflow.com/a/34947784 -- Posted by Sharath kumar, modified by community. See post 'Timeline' for change history-- Retrieved 2026-05-27, License - CC BY-SA 4.0-->
+                    <button type="submit" class="button" target="_blank">Send Message</button>
                 </form>
             </div>
         </section>
