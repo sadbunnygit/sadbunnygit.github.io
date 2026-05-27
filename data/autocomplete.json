@@ -6,13 +6,5 @@
             "Just saying hi!", 
             "Employment Opportunity"
         ]
-    },
-    {
-        "id": "test",
-        "options":
-        [
-            "you should see me", 
-            "and me"
-        ]
     }
 ]
