@@ -8,23 +8,27 @@ fetch('../data/autocomplete.json')
 
 function loadOptions(data = "")
 {
-    data.forEach(a => 
+    console.log(autocompletes);
+    data.forEach(ac => 
     {
-        console.log("load options for: ");
-        autocompletes.set(a.id, a.options);
-        renderDropdown(a);
-        const input = document.getElementById(a.id).querySelector("input");
-        const dropdown = document.getElementById(a.id).querySelector(".dropdown");
-        input.addEventListener("input", () =>  // filters list as user types
+        autocompletes.set(
+                            ac.id, 
+                            {
+                                input: document.getElementById(ac.id).querySelector("input"),
+                                dropdown: document.getElementById(ac.id).querySelector(".dropdown")
+                            }
+                        );
+        console.log(autocompletes.get(ac.id))
+        autocompletes.get(ac.id).input.addEventListener("input", () =>  // filters list as user types
         {
-            console.log("typed in category: ", input.value);
-            renderDropdown(a,input.value);
+            console.log("typed in category: ", autocompletes.get(ac.id).input.value);
+            renderDropdown(ac);
         });
-        input.addEventListener("focus", () => // open dropdown when they click box
+        autocompletes.get(ac.id).input.addEventListener("focus", () => // open dropdown when they click box
         {
             console.log("clicked in category");
-            renderDropdown(a,input.value);
-            dropdown.classList.remove("hidden");
+            renderDropdown(ac);
+            autocompletes.get(ac.id).dropdown.classList.remove("hidden");
         });
     });
     console.log(autocompletes);
@@ -46,11 +50,12 @@ document.addEventListener("click", (e) => // close when clicedk outside
 });
 
 
-function renderDropdown(ac, filter = "") 
+function renderDropdown(ac) 
 {
     console.log("dropdown rendering");
-    const dropdown = document.getElementById(ac.id).querySelector(".dropdown");
-    const input = document.getElementById(ac.id).querySelector("input");
+    const dropdown = autocompletes.get(ac.id).dropdown;
+    const input =  autocompletes.get(ac.id).input;
+    const filter = input.value;
     dropdown.innerHTML = "";
 
 
