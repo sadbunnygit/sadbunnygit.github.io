@@ -32,7 +32,7 @@ form.card
 }
 #contact .user-info input
 {
-    width: 50%;
+    width: 80%;
     padding: 14px 16px;
     font-size: 15px;
 }
@@ -41,7 +41,7 @@ form.card
 
 .email-content div
 {
-    width: 100%;
+    width: 25em;
 }
 .email-content textarea 
 {
