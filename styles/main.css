@@ -48,6 +48,7 @@ header
 {
     padding: 2vh;
     background-color: var(--headfoot-bg);
+    text-align: center;
 }
 
 body 
