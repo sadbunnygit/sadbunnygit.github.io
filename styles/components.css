@@ -35,7 +35,6 @@ input,.button,textarea
 .button img
 {
     height: 20px;
-    filter: brightness(0) invert(1); /*makes all white*/
 }
 input:focus, textarea:focus 
 {
