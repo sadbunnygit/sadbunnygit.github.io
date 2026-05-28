@@ -10,6 +10,18 @@
     align-items: start;
 }
 
+
+#contact .card a 
+{
+    text-decoration: none;
+    font-size: larger;
+}
+#contact .card a:hover
+{
+    text-decoration: underline;
+}
+
+
 form.card 
 {
     display: flex;
