@@ -57,6 +57,13 @@ a:hover
 {
     color: var(--accent-soft);
 }
+a img
+{
+    height: 1em;
+    vertical-align: top;
+    padding-right: 0.2em;
+}
+
 
 summary:hover 
 {
