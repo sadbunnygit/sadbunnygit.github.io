@@ -5,6 +5,7 @@
     --bg: #faf9ff;       
     --headfoot-bg: #d8baff;   
     --text: #1a1a1a;
+    --popout-overlap: rgba(0,0,0,0.7);
     
     --card: #ffffff;
     --card-border: #e6d9ff;
@@ -23,6 +24,7 @@ body.dark
     --bg: #1f1f1f;
     --headfoot-bg: #432767;
     --text: #eaeaea;
+    --popout-overlap: rgba(175, 175, 175, 0.5);
 
     --card: #0e0e0e;
     --card-border: #50007e;
