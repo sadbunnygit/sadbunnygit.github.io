@@ -29,7 +29,7 @@
                 "description": "",
                 "uses": 
                 [
-                    "WEA project",
+                    "WEA project backend",
                     "RPI Car for TEJ4M"
                 ]
             },
@@ -110,6 +110,16 @@
                 [
                     "School",
                     "Personal things"
+                ]
+            },
+            {
+                "name": "Git & GitHub",
+                "level": "comfortable",
+                "description": "Version control",
+                "uses": 
+                [
+                    "School projects",
+                    "Personal projects"
                 ]
             }
         ]
