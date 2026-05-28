@@ -8,15 +8,15 @@
     display: flex;
     gap: 30px;
     align-items: center;
-    flex-wrap: wrap; /* responsive fallback */
+    flex-wrap: wrap; 
 }
 
-.about-photo img 
+img.about-photo
 {
     width: 180px;
     height: 180px;
     object-fit: cover;
-    border-radius: 12px; /* or 50% for circle */
+    border-radius: 12px;
     border: 2px solid var(--accent);
 }
 

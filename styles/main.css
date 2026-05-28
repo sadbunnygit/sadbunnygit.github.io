@@ -101,3 +101,8 @@ footer
     margin: 2px auto;
     text-align: center;
 }
+
+.hori
+{
+    display: flex;
+}
