@@ -98,6 +98,15 @@
         }
     },
     {
+        "title": "Line Following Car",
+        "snippet": "A RPi Powered Line Following Car - TEJ4M Final Project",
+        "description":"Led a two-person team to design and build a line following car using a Raspberry Pi. Documented the process with journals and a Gantt chart.",
+        "demo":
+        {
+            "html": "<video autoplay controls src=\"../assets/videos/tej4mcar_fullpath.mov\" alt=\"alt: A video of RPi car following line\" width=\"480\" height=\"860\">"
+        }
+    },
+    {
         "title": "HELP SAD BUNNY",
         "snippet": "I made this at 10 years old :)",
         "demo": 
