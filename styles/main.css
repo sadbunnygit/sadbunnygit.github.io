@@ -93,3 +93,8 @@ footer
 {
     cursor: help;
 }
+
+.centered
+{
+    margin: 0 auto;
+}
