@@ -16,6 +16,21 @@
         ]
     },
     {
+        "title": "Music Machine Manager",
+        "snippet": "Something to manage what albums are on my mp3 player",
+        "links":
+        [
+            {
+                "label":
+                {
+                    "text":"GitHub",
+                    "img":"./assets/icons/GitHub_Logos/SVG/GitHub_Lockup_White.svg"
+                },
+                "url":"https://github.com/sadbunnygit/musicmachine"
+            }
+        ]
+    },
+    {
         "title": "minecraft-datapack",
         "snippet": "I'm learning how to build a Minecraft datapack!",
         "links":
