@@ -7,20 +7,22 @@
             {
                 "name": "C++",
                 "level": "comfortable",
-                "description": "OOP",
+                "description": "",
                 "uses": 
                 [
-                    "Academic coursework"
+                    "ICS3U - Ontario Grade 11 Computer Science",
+                    "CS 246 - Object-Oriented Software Development (Featured project: Biquadris)",
+                    "Music Machine Manager (Personal Project)"
                 ]
             },
             {
                 "name": "HTML/CSS/JS",
                 "level": "comfortable",
-                "description": "Web development for this portfolio site.",
+                "description": "",
                 "uses": 
                 [
-                    "This portfolio website",
-                    "Frontend for WEA project"
+                    "This portfolio website!",
+                    "Frontend for Customer Acquisition / Buiness Finder App (WEaccelerate Project)"
                 ]
             },
             {
@@ -29,26 +31,26 @@
                 "description": "",
                 "uses": 
                 [
-                    "WEA project backend",
-                    "RPI Car for TEJ4M"
+                    "RaspberryPI Car Project for TEJ4M - Ontario Grade 12 Computer Engineering Technology",
+                    "Backend (used flask) for Customer Acquisition / Buiness Finder App (WEaccelerate Project)"
                 ]
             },
             {
                 "name": "Racket",
                 "level": "familiar",
-                "description": "silly functional programming",
+                "description": "",
                 "uses": 
                 [
-                    "cs135"
+                    "CS 135 - Designing Functional Programs"
                 ]
             },
             {
                 "name": "Java",
                 "level": "comfortable",
-                "description": "OOP again",
+                "description": "",
                 "uses": 
                 [
-                    "ics4u"
+                    "ICS4U - Ontario Grade 12 Computer Science"
                 ]
             },
             {
@@ -57,7 +59,7 @@
                 "description": "",
                 "uses": 
                 [
-                    "cs136"
+                    "CS 136 - Elementary Algorithm Design and Data Abstraction"
                 ]
             },
             {
@@ -66,7 +68,8 @@
                 "description": "",
                 "uses": 
                 [
-                    "cs136L", "and some little stuff for testing i used in cs246"
+                    "CS 136L - Tools and Techniques for Software Development", 
+                    "CS 246 - Object-Oriented Software Development (not required for course just wrote a script to help with testcases)"
                 ]
             },
             {
@@ -75,7 +78,9 @@
                 "description": "",
                 "uses": 
                 [
-                    "cs136L", "cs246"
+                    "CS 136L - Tools and Techniques for Software Development", 
+                    "CS 246 - Object-Oriented Software Development",
+                    "Personal projects"
                 ]
             }
         ]
@@ -87,10 +92,20 @@
             {
                 "name": "Git & GitHub",
                 "level": "comfortable",
-                "description": "Version control for all solo and team projects.",
+                "description": "Version control",
                 "uses": 
                 [
-                    "All programming projects, especially collaborative ones"
+                    "Collaborative university projects",
+                    "Personal projects"
+                ]
+            },
+            {
+                "name": "Linux",
+                "level": "comfortable",
+                "description": "Command-line interface",
+                "uses": 
+                [
+                    "University coursework"
                 ]
             },
             {
@@ -99,7 +114,7 @@
                 "description": "An open-source code editor developed by Microsoft",
                 "uses": 
                 [
-                    "All programming projects!"
+                    "General software development"
                 ]
             },
             {
@@ -113,13 +128,31 @@
                 ]
             },
             {
-                "name": "Git & GitHub",
-                "level": "comfortable",
-                "description": "Version control",
+                "name": "Microsoft Azure",
+                "level": "familiar",
+                "description": "Cloud fundamentals & integrating Azure services into applications.",
                 "uses": 
                 [
-                    "School projects",
-                    "Personal projects"
+                    "AZ-900 certification",
+                    "Customer Acquisition / Buiness Finder App (WEaccelerate Project)"
+                ]
+            },
+            {
+                "name": "Godot Engine",
+                "level": "familiar",
+                "description": "Game Development Engine",
+                "uses": 
+                [
+                    "University Game Jam project - Waterloo is Not Love Island"
+                ]
+            },
+            {
+                "name": "Unity",
+                "level": "familiar",
+                "description": "Game Development Engine",
+                "uses": 
+                [
+                    "University Game Jam project - MASK"
                 ]
             }
         ]
@@ -134,7 +167,7 @@
                 "description": "",
                 "uses": 
                 [
-                    "RPI Car for TEJ4M"
+                    "TEJ4M - Ontario Grade 12 Computer Engineering Technology (Featured Project: RPI5 powered Line following car, using IR Sensors & Distance sensor)"
                 ]
             },
             {
@@ -143,9 +176,22 @@
                 "description": "",
                 "uses": 
                 [
-                    "Different projects for TEJ3M & TEJ4M"
+                    "TEJ3M - Ontario Grade 11 Computer Engineering Technology (Featured Project: Mastermind-style game, logic done with the Arduino",
+                    "TEJ4M - Ontario Grade 12 Computer Engineering Technology"
                 ]
-            }
+            },
+            {
+                "name": "Electronics & Circuit Design",
+                "level": "familiar",
+                "description": "",
+                "uses": 
+                [
+                    "TEJ3M - Ontario Grade 11 Computer Engineering Technology (Featured Project: Mastermind-style game using LEDs, buttons, a 7-segment display, and 4511 decoder, on a breadboard)",
+                    "TEJ4M - Ontario Grade 12 Computer Engineering Technology",
+                    "Adder made in both courses"
+                ]
+            },
+            
         ]
     }
 ]
