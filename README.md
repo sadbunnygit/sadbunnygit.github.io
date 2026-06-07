@@ -6,9 +6,8 @@ This is my personal portfolio website showcasing projects, skills, experience an
 
 ## Features
 - Light/Dark mode toggle
-- Bells & Whistles
-- Demo screen for a few of my projects
-   
+- Demo screen for my projects, including links to them
+- Email sender
 
 ## Authors
 
