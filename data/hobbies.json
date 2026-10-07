@@ -2,7 +2,7 @@
     {
         "name": "Rubik Cubes",
         "level": "intermediate",
-        "description": "3x3 PB: 36.13 seconds"
+        "description": "3x3 Single PB: 23.44 seconds \n 3x3 Ao5 PB: 29.47 seconds"
     },
     {
         "name": "Brazilian Jiujitsu",
@@ -22,12 +22,12 @@
     {
         "name": "Skateboarding",
         "level": "beginner",
-        "description": "The only trick I can do is shuv-it on one side without moving. But I can do tictac turns, and have gone up and down ramps."
+        "description": "The only trick I can do is shuv-it on one side without moving. But I can do tictac turns, and have gone up and down ramps. And off 1.5 ft curbs"
     },
     {
         "name": "Rock Climbing",
         "level": "beginner",
-        "description": "V2/V3 level"
+        "description": "V4 level"
     },
     {
         "name": "LEGO",
